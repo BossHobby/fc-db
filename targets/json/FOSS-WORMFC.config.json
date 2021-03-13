@@ -1,0 +1,107 @@
+{
+  "mcu": "STM32F405",
+  "board": "WORMFC",
+  "manufacturer": "FOSS",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PB6",
+      "rx_pin": "PB7"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB14"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB1"
+    },
+    {
+      "index": 2,
+      "pin": "PB0"
+    },
+    {
+      "index": 3,
+      "pin": "PA2"
+    },
+    {
+      "index": 4,
+      "pin": "PA3"
+    },
+    {
+      "index": 5,
+      "pin": "PA10"
+    },
+    {
+      "index": 6,
+      "pin": "PA8"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PA15"
+    },
+    {
+      "index": 2,
+      "pin": "PC14"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 3,
+      "pin": "PB12"
+    },
+    {
+      "index": 6,
+      "pin": "PB13"
+    }
+  ],
+  "usb_detect_pin": "PA9",
+  "battery_pin": "PC1",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 3,
+    "cs_pin": "PC0"
+  }
+}

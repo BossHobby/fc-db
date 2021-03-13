@@ -1,0 +1,84 @@
+{
+  "mcu": "STM32F7X2",
+  "board": "NUCLEOF722",
+  "manufacturer": "STMI",
+  "uart_ports": [
+    {
+      "index": 2,
+      "tx_pin": "PD5",
+      "rx_pin": "PD6"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PD8",
+      "rx_pin": "PD9"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 4,
+      "sclk_pin": "PE12",
+      "miso_pin": "PE13",
+      "mosi_pin": "PE14"
+    }
+  ],
+  "beeper_pins": [],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB8"
+    },
+    {
+      "index": 2,
+      "pin": "PA3"
+    },
+    {
+      "index": 3,
+      "pin": "PB5"
+    },
+    {
+      "index": 4,
+      "pin": "PB9"
+    },
+    {
+      "index": 5,
+      "pin": "PE6"
+    },
+    {
+      "index": 6,
+      "pin": "PB4"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PB7"
+    },
+    {
+      "index": 2,
+      "pin": "PB14"
+    }
+  ],
+  "inverter_pins": [],
+  "usb_detect_pin": "PA9",
+  "battery_pin": "PA3",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PB15",
+      "port": 0,
+      "cs_pin": ""
+    }
+  ]
+}

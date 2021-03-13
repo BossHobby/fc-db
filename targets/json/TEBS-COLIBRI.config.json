@@ -1,0 +1,105 @@
+{
+  "mcu": "STM32F405",
+  "board": "COLIBRI",
+  "manufacturer": "TEBS",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PB6",
+      "rx_pin": "PB7"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PC2",
+      "mosi_pin": "PC3"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC5"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB0"
+    },
+    {
+      "index": 2,
+      "pin": "PB4"
+    },
+    {
+      "index": 3,
+      "pin": "PB1"
+    },
+    {
+      "index": 4,
+      "pin": "PB15"
+    },
+    {
+      "index": 5,
+      "pin": "PB5"
+    },
+    {
+      "index": 6,
+      "pin": "PB14"
+    },
+    {
+      "index": 7,
+      "pin": "PB8"
+    },
+    {
+      "index": 8,
+      "pin": "PB9"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC14"
+    },
+    {
+      "index": 2,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 2,
+      "pin": "PB2"
+    }
+  ],
+  "usb_detect_pin": "PA9",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PC0",
+      "port": 1,
+      "cs_pin": "PC4"
+    }
+  ],
+  "data_flash": {
+    "port": 2,
+    "cs_pin": "PB12"
+  }
+}

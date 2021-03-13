@@ -1,0 +1,1 @@
+SYSTEM = stm32f7x2

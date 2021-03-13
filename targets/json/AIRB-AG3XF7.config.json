@@ -1,0 +1,117 @@
+{
+  "mcu": "STM32F7X2",
+  "board": "AG3XF7",
+  "manufacturer": "AIRB",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PC10",
+      "rx_pin": "PC11"
+    },
+    {
+      "index": 5,
+      "tx_pin": "PC12",
+      "rx_pin": "PD2"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
+    },
+    {
+      "index": 4,
+      "tx_pin": "",
+      "rx_pin": "PA1"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PC2",
+      "mosi_pin": "PC3"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PC8"
+    },
+    {
+      "index": 2,
+      "pin": "PB0"
+    },
+    {
+      "index": 3,
+      "pin": "PB1"
+    },
+    {
+      "index": 4,
+      "pin": "PB7"
+    },
+    {
+      "index": 5,
+      "pin": "PB8"
+    },
+    {
+      "index": 6,
+      "pin": "PC9"
+    },
+    {
+      "index": 7,
+      "pin": "PB14"
+    },
+    {
+      "index": 8,
+      "pin": "PB15"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": "PC0",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "",
+      "port": 1,
+      "cs_pin": "PA4"
+    },
+    {
+      "index": 2,
+      "int_pin": "",
+      "port": 0,
+      "cs_pin": "PC15"
+    }
+  ],
+  "osd": {
+    "port": 3,
+    "cs_pin": "PA15"
+  },
+  "data_flash": {
+    "port": 2,
+    "cs_pin": "PB12"
+  }
+}

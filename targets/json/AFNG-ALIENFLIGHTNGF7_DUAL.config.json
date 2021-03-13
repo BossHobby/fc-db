@@ -1,0 +1,116 @@
+{
+  "mcu": "STM32F7X2",
+  "board": "ALIENFLIGHTNGF7_DUAL",
+  "manufacturer": "AFNG",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PC10",
+      "rx_pin": "PC11"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PC2",
+      "mosi_pin": "PC3"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PC6"
+    },
+    {
+      "index": 2,
+      "pin": "PC7"
+    },
+    {
+      "index": 3,
+      "pin": "PB14"
+    },
+    {
+      "index": 4,
+      "pin": "PB0"
+    },
+    {
+      "index": 5,
+      "pin": "PA0"
+    },
+    {
+      "index": 6,
+      "pin": "PC8"
+    },
+    {
+      "index": 7,
+      "pin": "PA1"
+    },
+    {
+      "index": 8,
+      "pin": "PC9"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC12"
+    },
+    {
+      "index": 2,
+      "pin": "PD2"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": "PC0",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PC14",
+      "port": 1,
+      "cs_pin": "PA4"
+    },
+    {
+      "index": 2,
+      "int_pin": "PC15",
+      "port": 0,
+      "cs_pin": "PA15"
+    }
+  ],
+  "osd": {
+    "port": 3,
+    "cs_pin": "PB12"
+  },
+  "sd_card": {
+    "port": 2,
+    "cs_pin": "PB10"
+  }
+}

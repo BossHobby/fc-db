@@ -1,0 +1,90 @@
+{
+  "mcu": "STM32F405",
+  "board": "TRANSTECF405HD",
+  "manufacturer": "TTRH",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    },
+    {
+      "index": 5,
+      "tx_pin": "PC12",
+      "rx_pin": "PD2"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB4"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PC6"
+    },
+    {
+      "index": 2,
+      "pin": "PC7"
+    },
+    {
+      "index": 3,
+      "pin": "PC8"
+    },
+    {
+      "index": 4,
+      "pin": "PC9"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PB9"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 1,
+      "pin": "PB8"
+    }
+  ],
+  "usb_detect_pin": "PB12",
+  "battery_pin": "PC5",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PC3",
+      "port": 1,
+      "cs_pin": "PC2"
+    }
+  ],
+  "osd": {
+    "port": 0,
+    "cs_pin": ""
+  }
+}

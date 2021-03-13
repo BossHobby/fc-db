@@ -1,0 +1,116 @@
+{
+  "mcu": "STM32F405",
+  "board": "BEEROTORF4",
+  "manufacturer": "RCTI",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PC12"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB3"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB0"
+    },
+    {
+      "index": 2,
+      "pin": "PB1"
+    },
+    {
+      "index": 3,
+      "pin": "PA1"
+    },
+    {
+      "index": 4,
+      "pin": "PA0"
+    },
+    {
+      "index": 5,
+      "pin": "PC6"
+    },
+    {
+      "index": 6,
+      "pin": "PC7"
+    },
+    {
+      "index": 7,
+      "pin": "PB5"
+    },
+    {
+      "index": 8,
+      "pin": "PB9"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PB4"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 2,
+      "pin": "PC15"
+    },
+    {
+      "index": 3,
+      "pin": "PC14"
+    }
+  ],
+  "usb_detect_pin": "PC5",
+  "battery_pin": "PC0",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PA8",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 3,
+    "cs_pin": "PA15"
+  },
+  "sd_card": {
+    "port": 2,
+    "cs_pin": "PB12"
+  }
+}

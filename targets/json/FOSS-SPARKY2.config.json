@@ -1,0 +1,102 @@
+{
+  "mcu": "STM32F405",
+  "board": "SPARKY2",
+  "manufacturer": "FOSS",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PC12"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC9"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB0"
+    },
+    {
+      "index": 2,
+      "pin": "PB1"
+    },
+    {
+      "index": 3,
+      "pin": "PA3"
+    },
+    {
+      "index": 4,
+      "pin": "PA2"
+    },
+    {
+      "index": 5,
+      "pin": "PA1"
+    },
+    {
+      "index": 6,
+      "pin": "PA0"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PB5"
+    },
+    {
+      "index": 2,
+      "pin": "PB4"
+    },
+    {
+      "index": 3,
+      "pin": "PB6"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 6,
+      "pin": "PC6"
+    }
+  ],
+  "usb_detect_pin": "PA8",
+  "battery_pin": "PC1",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PC5",
+      "port": 1,
+      "cs_pin": "PC4"
+    }
+  ],
+  "data_flash": {
+    "port": 3,
+    "cs_pin": "PB3"
+  }
+}

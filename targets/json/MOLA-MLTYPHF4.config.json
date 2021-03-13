@@ -1,0 +1,95 @@
+{
+  "mcu": "STM32F405",
+  "board": "MLTYPHF4",
+  "manufacturer": "MOLA",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    },
+    {
+      "index": 5,
+      "tx_pin": "PC12",
+      "rx_pin": "PD2"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PC12"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB4"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB5"
+    },
+    {
+      "index": 2,
+      "pin": "PB0"
+    },
+    {
+      "index": 3,
+      "pin": "PB3"
+    },
+    {
+      "index": 4,
+      "pin": "PB1"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC3"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": "PC0",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PC5",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 3,
+    "cs_pin": "PA15"
+  },
+  "sd_card": {
+    "port": 2,
+    "cs_pin": "PB12"
+  }
+}

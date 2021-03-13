@@ -1,0 +1,122 @@
+{
+  "mcu": "STM32F7X2",
+  "board": "GEPRCF722_BT_HD",
+  "manufacturer": "GEPR",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PC10",
+      "rx_pin": "PC11"
+    },
+    {
+      "index": 5,
+      "tx_pin": "PC12",
+      "rx_pin": "PD2"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC15"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PC8"
+    },
+    {
+      "index": 2,
+      "pin": "PC6"
+    },
+    {
+      "index": 3,
+      "pin": "PC9"
+    },
+    {
+      "index": 4,
+      "pin": "PC7"
+    },
+    {
+      "index": 5,
+      "pin": "PB6"
+    },
+    {
+      "index": 6,
+      "pin": "PB7"
+    },
+    {
+      "index": 7,
+      "pin": "PB1"
+    },
+    {
+      "index": 8,
+      "pin": "PB0"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC4"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": "PC1",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PA8",
+      "port": 1,
+      "cs_pin": "PA15"
+    },
+    {
+      "index": 2,
+      "int_pin": "PB2",
+      "port": 0,
+      "cs_pin": "PC3"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PB12"
+  },
+  "data_flash": {
+    "port": 3,
+    "cs_pin": "PB9"
+  }
+}

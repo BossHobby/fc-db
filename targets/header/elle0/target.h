@@ -1,0 +1,71 @@
+
+#include "config.h"
+#include "config_helper.h"
+
+#define ELLE0
+
+#define F4
+#define F405
+
+//PORTS
+#define SPI_PORTS \
+  SPI2_PB13PB14PB15  \
+
+#define USART_PORTS \
+	USART2_PA3PA2 \
+	USART3_PB11PB10
+
+//LEDS
+#define LED_NUMBER 3
+#define LED1PIN GPIO_Pin_8
+#define LED1PORT GPIOA
+#define LED2PIN GPIO_Pin_4
+#define LED2PORT GPIOB
+#define LED3PIN GPIO_Pin_2
+#define LED3PORT GPIOC
+
+
+
+//GYRO
+#define MPU6XXX_SPI_PORT SPI_PORT2
+#define MPU6XXX_NSS PIN_B12
+// #define MPU6XXX_INT 
+#define USE_DUMMY_I2C
+#define SENSOR_ROTATE_90_CCW
+#define GYRO_ID_1 0x68
+#define GYRO_ID_2 0x73
+#define GYRO_ID_3 0x78
+#define GYRO_ID_4 0x71
+
+//RADIO
+#define RX_USART USART_PORT2
+#define SOFTSPI_NONE
+
+
+
+//VOLTAGE DIVIDER
+#define BATTERYPIN GPIO_Pin_4
+#define BATTERYPORT GPIOC
+#define BATTERY_ADC_CHANNEL ADC_Channel_8
+
+#ifndef VOLTAGE_DIVIDER_R1
+#define VOLTAGE_DIVIDER_R1 10000
+#endif
+
+#ifndef VOLTAGE_DIVIDER_R2
+#define VOLTAGE_DIVIDER_R2 1000
+#endif
+
+#ifndef ADC_REF_VOLTAGE
+#define ADC_REF_VOLTAGE 3.3
+#endif
+
+// MOTOR PINS
+#define MOTOR_PIN0 MOTOR_PIN_PC6
+#define MOTOR_PIN1 MOTOR_PIN_PC7
+#define MOTOR_PIN2 MOTOR_PIN_PC8
+#define MOTOR_PIN3 MOTOR_PIN_PC9
+#define MOTOR_PIN4 MOTOR_PIN_PA0
+#define MOTOR_PIN5 MOTOR_PIN_PA1
+#define MOTOR_PIN6 MOTOR_PIN_PB8
+#define MOTOR_PIN7 MOTOR_PIN_PB9

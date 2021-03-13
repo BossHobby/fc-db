@@ -1,0 +1,98 @@
+{
+  "mcu": "STM32F411",
+  "board": "MATEKF411SE",
+  "manufacturer": "MTKS",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA15",
+      "rx_pin": "PB3"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 11,
+      "tx_pin": "PB9",
+      "rx_pin": ""
+    },
+    {
+      "index": 12,
+      "tx_pin": "PA2",
+      "rx_pin": ""
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB2"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB4"
+    },
+    {
+      "index": 2,
+      "pin": "PB5"
+    },
+    {
+      "index": 3,
+      "pin": "PA8"
+    },
+    {
+      "index": 4,
+      "pin": "PA9"
+    },
+    {
+      "index": 5,
+      "pin": "PA10"
+    },
+    {
+      "index": 6,
+      "pin": "PB8"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    },
+    {
+      "index": 2,
+      "pin": "PC14"
+    }
+  ],
+  "inverter_pins": [],
+  "usb_detect_pin": "PC15",
+  "battery_pin": "PB0",
+  "gyros": [
+    {
+      "index": 1,
+      "int_pin": "PA14",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PB12"
+  }
+}
