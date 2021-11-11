@@ -37,13 +37,11 @@ const headerTemplate = `
 //LEDS
 #define LED_NUMBER {{ len .LEDPins }}
 {{- range $i, $v := .LEDPins }}
-#define LED{{ $v.Index }}PIN GPIO_Pin_{{ $v.Pin.Num }}
-#define LED{{ $v.Index }}PORT GPIO{{ $v.Pin.Port }}
+#define LED{{ $v.Index }}PIN Pin_{{ $v.Pin | pinEnum }}
 {{- end }}
 
 {{ if len .BeeperPins -}}
-#define BUZZER_PIN GPIO_Pin_{{ (index .BeeperPins 0).Pin.Num }}
-#define BUZZER_PIN_PORT GPIO{{ (index .BeeperPins 0).Pin.Port }}
+#define BUZZER_PIN {{ (index .BeeperPins 0).Pin | pinEnum }}
 {{- end }}
 
 //GYRO
@@ -70,8 +68,7 @@ const headerTemplate = `
 
 {{ if .BatteryPin -}}
 //VOLTAGE DIVIDER
-#define BATTERYPIN GPIO_Pin_{{ .BatteryPin.Num }}
-#define BATTERYPORT GPIO{{ .BatteryPin.Port }}
+#define BATTERYPIN GPIO_Pin_{{ .BatteryPin | pinEnum }}
 #define BATTERY_ADC_CHANNEL ADC_Channel_8
 
 #ifndef VOLTAGE_DIVIDER_R1
@@ -152,15 +149,5 @@ func main() {
 		if err := t.Execute(f, target); err != nil {
 			log.Panic(err)
 		}
-	}
-
-	{
-		f, err := os.Create(filepath.Join(targetDir, "target.mk"))
-		if err != nil {
-			log.Panic(err)
-		}
-		defer f.Close()
-
-		f.WriteString(fmt.Sprintf("SYSTEM = %s\n", strings.ToLower(target.MCU)))
 	}
 }
