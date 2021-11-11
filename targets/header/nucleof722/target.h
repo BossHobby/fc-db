@@ -19,10 +19,8 @@
 
 //LEDS
 #define LED_NUMBER 2
-#define LED1PIN GPIO_Pin_7
-#define LED1PORT GPIOB
-#define LED2PIN GPIO_Pin_14
-#define LED2PORT GPIOB
+#define LED1PIN Pin_PIN_B7
+#define LED2PIN Pin_PIN_B14
 
 
 
@@ -44,8 +42,7 @@
 
 
 //VOLTAGE DIVIDER
-#define BATTERYPIN GPIO_Pin_3
-#define BATTERYPORT GPIOA
+#define BATTERYPIN GPIO_Pin_PIN_A3
 #define BATTERY_ADC_CHANNEL ADC_Channel_8
 
 #ifndef VOLTAGE_DIVIDER_R1

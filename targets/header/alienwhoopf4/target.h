@@ -21,13 +21,10 @@
 
 //LEDS
 #define LED_NUMBER 2
-#define LED1PIN GPIO_Pin_12
-#define LED1PORT GPIOC
-#define LED2PIN GPIO_Pin_2
-#define LED2PORT GPIOD
+#define LED1PIN Pin_PIN_C12
+#define LED2PIN Pin_PIN_D2
 
-#define BUZZER_PIN GPIO_Pin_2
-#define BUZZER_PIN_PORT GPIOA
+#define BUZZER_PIN PIN_A2
 
 //GYRO
 #define MPU6XXX_SPI_PORT SPI_PORT1

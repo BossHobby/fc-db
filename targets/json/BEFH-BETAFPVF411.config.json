@@ -17,6 +17,11 @@
       "index": 11,
       "tx_pin": "PB3",
       "rx_pin": "PB3"
+    },
+    {
+      "index": 12,
+      "tx_pin": "PB10",
+      "rx_pin": "PB10"
     }
   ],
   "spi_ports": [

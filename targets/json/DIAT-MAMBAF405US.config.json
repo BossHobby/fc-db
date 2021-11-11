@@ -76,22 +76,6 @@
     {
       "index": 4,
       "pin": "PC8"
-    },
-    {
-      "index": 5,
-      "pin": "PB0"
-    },
-    {
-      "index": 6,
-      "pin": "PB1"
-    },
-    {
-      "index": 7,
-      "pin": "PA10"
-    },
-    {
-      "index": 8,
-      "pin": "PB4"
     }
   ],
   "led_pins": [

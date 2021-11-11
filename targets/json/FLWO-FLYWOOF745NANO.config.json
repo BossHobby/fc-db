@@ -15,8 +15,8 @@
     },
     {
       "index": 3,
-      "tx_pin": "PB10",
-      "rx_pin": "PB11"
+      "tx_pin": "PD8",
+      "rx_pin": "PD9"
     },
     {
       "index": 4,

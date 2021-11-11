@@ -79,6 +79,14 @@
     {
       "index": 6,
       "pin": "PC6"
+    },
+    {
+      "index": 7,
+      "pin": "PB6"
+    },
+    {
+      "index": 8,
+      "pin": "PB7"
     }
   ],
   "led_pins": [
