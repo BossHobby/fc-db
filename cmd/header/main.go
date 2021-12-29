@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -34,7 +35,7 @@ const headerTemplate = `
 //LEDS
 #define LED_NUMBER {{ len .LEDPins }}
 {{- range $i, $v := .LEDPins }}
-#define LED{{ $v.Index }}PIN Pin_{{ $v.Pin | pinEnum }}
+#define LED{{ $v.Index }}PIN {{ $v.Pin | pinEnum }}
 #define LED{{ $v.Index }}_INVERT
 {{- end }}
 
@@ -117,20 +118,10 @@ func readTarget(filename string) (*fc.Target, error) {
 	return target, nil
 }
 
-func main() {
-	flag.Parse()
-
-	if flag.NArg() != 1 {
-		log.Println("missing <filename>")
-		os.Exit(1)
-	}
-
-	filename := flag.Arg(0)
-	log.Printf("processing %s", filename)
-
+func writeHeader(filename string) error {
 	target, err := readTarget(filename)
 	if err != nil {
-		log.Panic(err)
+		return err
 	}
 
 	funcMap := template.FuncMap{
@@ -155,19 +146,61 @@ func main() {
 
 	targetDir := strings.ToLower(target.Board)
 	if err := os.Mkdir(targetDir, 0755); err != nil && !os.IsExist(err) {
-		log.Panic(err)
+		return err
 	}
 
 	{
 		f, err := os.Create(filepath.Join(targetDir, "target.h"))
 		if err != nil {
-			log.Panic(err)
+			return err
 		}
 		defer f.Close()
 
 		t := template.Must(template.New("header").Funcs(funcMap).Parse(headerTemplate))
 		if err := t.Execute(f, target); err != nil {
-			log.Panic(err)
+			return err
 		}
 	}
+
+	return nil
+}
+
+func main() {
+	flag.Parse()
+
+	if flag.NArg() != 1 {
+		log.Println("missing <filename>")
+		os.Exit(1)
+	}
+
+	filename := flag.Arg(0)
+
+	s, err := os.Stat(filename)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if s.IsDir() {
+		files, err := ioutil.ReadDir(filename)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		for _, f := range files {
+			path := filepath.Join(filename, f.Name())
+			if f.IsDir() {
+				continue
+			}
+
+			log.Printf("processing %s\n", path)
+			if err := writeHeader(path); err != nil {
+				log.Fatal(err)
+			}
+		}
+	} else {
+		if err := writeHeader(filename); err != nil {
+			log.Fatal(err)
+		}
+	}
+
 }
