@@ -110,11 +110,14 @@
     }
   ],
   "usb_detect_pin": "PA9",
-  "battery_pin": "PC3",
+  "battery_pin": {
+    "pin": "PC3",
+    "adc_channel": 13
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PB0",
+      "exti_pin": "PB0",
       "port": 1,
       "cs_pin": "PA4"
     }

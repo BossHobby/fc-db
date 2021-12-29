@@ -4,9 +4,6 @@
 
 #define ALIENWHOOPF4
 
-#define F4
-#define F405
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7  \
@@ -22,15 +19,17 @@
 //LEDS
 #define LED_NUMBER 2
 #define LED1PIN Pin_PIN_C12
+#define LED1_INVERT
 #define LED2PIN Pin_PIN_D2
+#define LED2_INVERT
 
 #define BUZZER_PIN PIN_A2
 
 //GYRO
-#define MPU6XXX_SPI_PORT SPI_PORT1
-#define MPU6XXX_NSS PIN_A4
-// #define MPU6XXX_INT 
-#define USE_DUMMY_I2C
+#define GYRO_TYPE MPU6XXX
+#define GYRO_SPI_PORT SPI_PORT1
+#define GYRO_NSS PIN_A4
+#define GYRO_INT PIN_C14
 #define SENSOR_ROTATE_90_CCW
 #define GYRO_ID_1 0x68
 #define GYRO_ID_2 0x73
@@ -38,8 +37,11 @@
 #define GYRO_ID_4 0x71
 
 //RADIO
+
+
+#ifdef SERIAL_RX
 #define RX_USART USART_PORT2
-#define SOFTSPI_NONE
+#endif
 
 // OSD
 #define ENABLE_OSD
@@ -49,7 +51,11 @@
 
 
 // MOTOR PINS
-#define MOTOR_PIN0 MOTOR_PIN_PC9
-#define MOTOR_PIN1 MOTOR_PIN_PC8
-#define MOTOR_PIN2 MOTOR_PIN_PC7
-#define MOTOR_PIN3 MOTOR_PIN_PC6
+//S3_OUT
+#define MOTOR_PIN0 MOTOR_PIN_PC7
+//S4_OUT
+#define MOTOR_PIN1 MOTOR_PIN_PC6
+//S1_OUT
+#define MOTOR_PIN2 MOTOR_PIN_PC9
+//S2_OUT
+#define MOTOR_PIN3 MOTOR_PIN_PC8

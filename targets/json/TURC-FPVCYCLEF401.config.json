@@ -60,11 +60,14 @@
   ],
   "inverter_pins": [],
   "usb_detect_pin": "PC15",
-  "battery_pin": "PB0",
+  "battery_pin": {
+    "pin": "PB0",
+    "adc_channel": 8
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PA1",
+      "exti_pin": "PA1",
       "port": 1,
       "cs_pin": "PA4"
     }

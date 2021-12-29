@@ -1,0 +1,109 @@
+{
+  "mcu": "STM32F745",
+  "board": "FOXEERF745_AIO",
+  "manufacturer": "FOXE",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    },
+    {
+      "index": 7,
+      "tx_pin": "PE8",
+      "rx_pin": "PE7"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PC12"
+    },
+    {
+      "index": 4,
+      "sclk_pin": "PE2",
+      "miso_pin": "PE5",
+      "mosi_pin": "PE6"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PD2"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB4"
+    },
+    {
+      "index": 2,
+      "pin": "PB5"
+    },
+    {
+      "index": 3,
+      "pin": "PB1"
+    },
+    {
+      "index": 4,
+      "pin": "PB0"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": {
+    "pin": "PC3",
+    "adc_channel": -1
+  },
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "PD0",
+      "port": 3,
+      "cs_pin": "PA15"
+    }
+  ],
+  "osd": {
+    "port": 1,
+    "cs_pin": "PA4"
+  },
+  "data_flash": {
+    "port": 4,
+    "cs_pin": "PE4"
+  }
+}

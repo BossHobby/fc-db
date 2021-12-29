@@ -34,7 +34,24 @@
       "pin": "PB1"
     }
   ],
-  "motor_pins": [],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB10"
+    },
+    {
+      "index": 2,
+      "pin": "PA0"
+    },
+    {
+      "index": 3,
+      "pin": "PB6"
+    },
+    {
+      "index": 4,
+      "pin": "PB7"
+    }
+  ],
   "led_pins": [
     {
       "index": 1,
@@ -45,7 +62,7 @@
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PA1",
+      "exti_pin": "PA1",
       "port": 1,
       "cs_pin": "PA4"
     }

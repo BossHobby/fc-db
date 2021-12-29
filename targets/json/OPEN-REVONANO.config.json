@@ -70,11 +70,14 @@
       "pin": "PC15"
     }
   ],
-  "battery_pin": "PA6",
+  "battery_pin": {
+    "pin": "PA6",
+    "adc_channel": 6
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PA15",
+      "exti_pin": "PA15",
       "port": 2,
       "cs_pin": "PB12"
     }

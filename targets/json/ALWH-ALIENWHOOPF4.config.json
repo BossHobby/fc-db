@@ -82,7 +82,7 @@
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PC14",
+      "exti_pin": "PC14",
       "port": 1,
       "cs_pin": "PA4"
     }

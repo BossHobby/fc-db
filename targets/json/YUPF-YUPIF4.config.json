@@ -94,11 +94,14 @@
       "pin": "PB15"
     }
   ],
-  "battery_pin": "PC1",
+  "battery_pin": {
+    "pin": "PC1",
+    "adc_channel": 11
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PC4",
+      "exti_pin": "",
       "port": 1,
       "cs_pin": "PA4"
     }

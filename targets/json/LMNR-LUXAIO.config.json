@@ -88,7 +88,7 @@
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PA4",
+      "exti_pin": "PA4",
       "port": 2,
       "cs_pin": "PB12"
     }

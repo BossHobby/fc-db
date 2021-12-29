@@ -76,11 +76,14 @@
     }
   ],
   "usb_detect_pin": "PC5",
-  "battery_pin": "PC1",
+  "battery_pin": {
+    "pin": "PC1",
+    "adc_channel": 11
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PC4",
+      "exti_pin": "PC4",
       "port": 1,
       "cs_pin": "PA4"
     }

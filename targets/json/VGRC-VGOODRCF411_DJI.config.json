@@ -68,11 +68,14 @@
       "pin": "PB10"
     }
   ],
-  "battery_pin": "PA0",
+  "battery_pin": {
+    "pin": "PA0",
+    "adc_channel": 0
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PB0",
+      "exti_pin": "PB0",
       "port": 1,
       "cs_pin": "PA4"
     }

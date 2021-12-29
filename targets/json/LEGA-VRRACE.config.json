@@ -91,11 +91,14 @@
       "pin": "PD7"
     }
   ],
-  "battery_pin": "PC0",
+  "battery_pin": {
+    "pin": "PC0",
+    "adc_channel": 10
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PD10",
+      "exti_pin": "PD10",
       "port": 2,
       "cs_pin": "PE10"
     }

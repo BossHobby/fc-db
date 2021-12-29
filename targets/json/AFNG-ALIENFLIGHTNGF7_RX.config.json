@@ -90,11 +90,14 @@
     }
   ],
   "inverter_pins": [],
-  "battery_pin": "PC0",
+  "battery_pin": {
+    "pin": "PC0",
+    "adc_channel": -1
+  },
   "gyros": [
     {
       "index": 1,
-      "int_pin": "PC14",
+      "exti_pin": "PC14",
       "port": 1,
       "cs_pin": "PA4"
     }
@@ -112,6 +115,7 @@
     "cs_pin": "PB10"
   },
   "rx": {
+    "exti_pin": "PB15",
     "port": 3,
     "cs_pin": "PA15"
   }
