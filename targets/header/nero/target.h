@@ -17,11 +17,11 @@
 
 //LEDS
 #define LED_NUMBER 3
-#define LED1PIN Pin_PIN_B6
+#define LED1PIN PIN_B6
 #define LED1_INVERT
-#define LED2PIN Pin_PIN_B5
+#define LED2PIN PIN_B5
 #define LED2_INVERT
-#define LED3PIN Pin_PIN_B4
+#define LED3PIN PIN_B4
 #define LED3_INVERT
 
 

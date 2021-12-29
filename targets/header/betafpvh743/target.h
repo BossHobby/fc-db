@@ -22,9 +22,9 @@
 
 //LEDS
 #define LED_NUMBER 2
-#define LED1PIN Pin_PIN_E2
+#define LED1PIN PIN_E2
 #define LED1_INVERT
-#define LED2PIN Pin_PIN_E3
+#define LED2PIN PIN_E3
 #define LED2_INVERT
 
 #define BUZZER_PIN PIN_B3

@@ -20,7 +20,7 @@
 
 //LEDS
 #define LED_NUMBER 1
-#define LED1PIN Pin_PIN_C5
+#define LED1PIN PIN_C5
 #define LED1_INVERT
 
 #define BUZZER_PIN PIN_C13
