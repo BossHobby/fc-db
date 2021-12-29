@@ -38,88 +38,96 @@ func mapResource(t *fc.Target, resource string, index int, pin fc.Pin) {
 			Index: index,
 			Pin:   pin,
 		})
-		break
+
 	case "MOTOR":
 		t.MotorPins = append(t.MotorPins, fc.PinDevice{
 			Index: index,
 			Pin:   pin,
 		})
-		break
+
 	case "LED":
 		t.LEDPins = append(t.LEDPins, fc.PinDevice{
 			Index: index,
 			Pin:   pin,
 		})
-		break
+
 	case "INVERTER":
 		t.InverterPins = append(t.InverterPins, fc.PinDevice{
 			Index: index,
 			Pin:   pin,
 		})
-		break
+
 	case "USB_DETECT":
 		t.USBDetectPin = &pin
-		break
+
 	case "ADC_BATT":
-		t.BatteryPin = &pin
-		break
+		t.BatteryPin = &fc.ADCPin{
+			Pin:        pin,
+			ADCChannel: getAdcChannel(pin, t.MCU),
+		}
 
 	case "SERIAL_TX":
 		i := ensureIndex(&t.UARTPorts, index, fc.UARTPort{
 			Index: index,
 		})
 		t.UARTPorts[i].TXPin = pin
-		break
+
 	case "SERIAL_RX":
 		i := ensureIndex(&t.UARTPorts, index, fc.UARTPort{
 			Index: index,
 		})
 		t.UARTPorts[i].RXPin = pin
-		break
 
 	case "SPI_SCK":
 		i := ensureIndex(&t.SPIPorts, index, fc.SPIPort{
 			Index: index,
 		})
 		t.SPIPorts[i].SCLKPin = pin
-		break
+
 	case "SPI_MISO":
 		i := ensureIndex(&t.SPIPorts, index, fc.SPIPort{
 			Index: index,
 		})
 		t.SPIPorts[i].MISOPin = pin
-		break
+
 	case "SPI_MOSI":
 		i := ensureIndex(&t.SPIPorts, index, fc.SPIPort{
 			Index: index,
 		})
 		t.SPIPorts[i].MOSIPin = pin
-		break
 
 	case "GYRO_CS":
 		i := ensureIndex(&t.Gyros, index, fc.GyroDevice{
 			Index: index,
 		})
 		t.Gyros[i].CSPin = pin
-		break
+
 	case "GYRO_EXTI":
 		i := ensureIndex(&t.Gyros, index, fc.GyroDevice{
 			Index: index,
 		})
-		t.Gyros[i].INTPin = pin
-		break
+		t.Gyros[i].EXTI = pin
+
 	case "FLASH_CS":
 		ensureSpi(&t.DataFlash).CSPin = pin
-		break
+
 	case "OSD_CS":
 		ensureSpi(&t.OSD).CSPin = pin
-		break
+
 	case "SDCARD_CS":
 		ensureSpi(&t.SDCard).CSPin = pin
-		break
+
 	case "RX_SPI_CS":
-		ensureSpi(&t.RX).CSPin = pin
-		break
+		if t.RX == nil {
+			t.RX = &fc.RadioDevice{}
+		}
+		t.RX.CSPin = pin
+
+	case "RX_SPI_EXTI":
+		if t.RX == nil {
+			t.RX = &fc.RadioDevice{}
+		}
+		t.RX.EXTI = pin
 	}
 }
 
@@ -130,19 +138,22 @@ func mapSet(t *fc.Target, key, value string) {
 			Index: 1,
 		})
 		t.Gyros[i].Port = util.MustParseInt(value)
-		break
+
 	case "flash_spi_bus":
 		ensureSpi(&t.DataFlash).Port = util.MustParseInt(value)
-		break
+
 	case "sdcard_spi_bus":
 		ensureSpi(&t.SDCard).Port = util.MustParseInt(value)
-		break
+
 	case "max7456_spi_bus":
 		ensureSpi(&t.OSD).Port = util.MustParseInt(value)
-		break
+
 	case "rx_spi_bus":
-		ensureSpi(&t.RX).Port = util.MustParseInt(value)
-		break
+		if t.RX == nil {
+			t.RX = &fc.RadioDevice{}
+		}
+		t.RX.Port = util.MustParseInt(value)
+
 	}
 }
 
@@ -175,11 +186,9 @@ func ParseConfig(path string) (*fc.Target, error) {
 		switch parts[0] {
 		case "board_name":
 			t.Board = parts[1]
-			break
 
 		case "manufacturer_id":
 			t.Manufacturer = parts[1]
-			break
 
 		case "resource":
 			resource := parts[1]
@@ -194,11 +203,9 @@ func ParseConfig(path string) (*fc.Target, error) {
 			} else {
 				log.Fatal("invalid resource " + line)
 			}
-			break
 
 		case "set":
 			mapSet(t, parts[1], parts[3])
-			break
 		}
 
 	}

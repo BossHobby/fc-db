@@ -52,6 +52,11 @@ type PinDevice struct {
 	Pin   Pin `json:"pin"`
 }
 
+type ADCPin struct {
+	Pin        Pin `json:"pin"`
+	ADCChannel int `json:"adc_channel"`
+}
+
 type UARTPort struct {
 	Index int `json:"index"`
 	TXPin Pin `json:"tx_pin"`
@@ -70,9 +75,14 @@ type SPIDevice struct {
 	CSPin Pin `json:"cs_pin"`
 }
 
+type RadioDevice struct {
+	EXTI Pin `json:"exti_pin"`
+	SPIDevice
+}
+
 type GyroDevice struct {
-	Index  int `json:"index"`
-	INTPin Pin `json:"int_pin"`
+	Index int `json:"index"`
+	EXTI  Pin `json:"exti_pin"`
 	SPIDevice
 }
 
@@ -89,13 +99,13 @@ type Target struct {
 	LEDPins      []PinDevice `json:"led_pins"`
 	InverterPins []PinDevice `json:"inverter_pins"`
 	USBDetectPin *Pin        `json:"usb_detect_pin,omitempty"`
-	BatteryPin   *Pin        `json:"battery_pin,omitempty"`
+	BatteryPin   *ADCPin     `json:"battery_pin,omitempty"`
 
 	Gyros     []GyroDevice `json:"gyros"`
 	OSD       *SPIDevice   `json:"osd,omitempty"`
 	DataFlash *SPIDevice   `json:"data_flash,omitempty"`
 	SDCard    *SPIDevice   `json:"sd_card,omitempty"`
-	RX        *SPIDevice   `json:"rx,omitempty"`
+	RX        *RadioDevice `json:"rx,omitempty"`
 }
 
 func NewTarget() *Target {

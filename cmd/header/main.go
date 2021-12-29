@@ -20,9 +20,6 @@ const headerTemplate = `
 
 #define {{ .Board }}
 
-#define F4
-#define {{ .MCU | mcuShort }}
-
 //PORTS
 #define SPI_PORTS \
 {{- range $i, $v := .SPIPorts }}
@@ -38,6 +35,7 @@ const headerTemplate = `
 #define LED_NUMBER {{ len .LEDPins }}
 {{- range $i, $v := .LEDPins }}
 #define LED{{ $v.Index }}PIN Pin_{{ $v.Pin | pinEnum }}
+#define LED{{ $v.Index }}_INVERT
 {{- end }}
 
 {{ if len .BeeperPins -}}
@@ -45,10 +43,10 @@ const headerTemplate = `
 {{- end }}
 
 //GYRO
-#define MPU6XXX_SPI_PORT SPI_PORT{{ (index .Gyros 0).Port }}
-#define MPU6XXX_NSS {{ (index .Gyros 0).CSPin | pinEnum }}
-// #define MPU6XXX_INT 
-#define USE_DUMMY_I2C
+#define GYRO_TYPE MPU6XXX
+#define GYRO_SPI_PORT SPI_PORT{{ (index .Gyros 0).Port }}
+#define GYRO_NSS {{ (index .Gyros 0).CSPin | pinEnum }}
+#define GYRO_INT {{ (index .Gyros 0).EXTI | pinEnum }}
 #define SENSOR_ROTATE_90_CCW
 #define GYRO_ID_1 0x68
 #define GYRO_ID_2 0x73
@@ -56,8 +54,21 @@ const headerTemplate = `
 #define GYRO_ID_4 0x71
 
 //RADIO
+{{ if .RX -}}
+#ifdef RX_FRSKY
+#define USE_CC2500
+#define CC2500_SPI_PORT SPI_PORT{{ .RX.Port }}
+#define CC2500_NSS {{ .RX.CSPin | pinEnum }}
+#define CC2500_GDO0_PIN {{ .RX.EXTI | pinEnum }}
+// #define CC2500_TX_EN_PIN
+// #define CC2500_LNA_EN_PIN
+// #define CC2500_ANT_SEL_PIN
+#endif
+{{- end }}
+
+#ifdef SERIAL_RX
 #define RX_USART USART_PORT2
-#define SOFTSPI_NONE
+#endif
 
 {{ if .OSD -}}
 // OSD
@@ -68,8 +79,8 @@ const headerTemplate = `
 
 {{ if .BatteryPin -}}
 //VOLTAGE DIVIDER
-#define BATTERYPIN GPIO_Pin_{{ .BatteryPin | pinEnum }}
-#define BATTERY_ADC_CHANNEL ADC_Channel_8
+#define BATTERYPIN {{ .BatteryPin.Pin | pinEnum }}
+#define BATTERY_ADC_CHANNEL LL_ADC_CHANNEL_{{ .BatteryPin.ADCChannel }}
 
 #ifndef VOLTAGE_DIVIDER_R1
 #define VOLTAGE_DIVIDER_R1 10000
@@ -86,6 +97,7 @@ const headerTemplate = `
 
 // MOTOR PINS
 {{- range $i, $v := .MotorPins }}
+//S{{ $v.Index }}_OUT
 #define MOTOR_PIN{{ $i }} MOTOR_PIN_{{ $v.Pin }}
 {{- end }}
 `
@@ -131,6 +143,14 @@ func main() {
 		"lastIndex": func(index int, m interface{}) bool {
 			return index == reflect.ValueOf(m).Len()-1
 		},
+	}
+
+	// reorder motor pins to match QS
+	target.MotorPins = []fc.PinDevice{
+		target.MotorPins[2],
+		target.MotorPins[3],
+		target.MotorPins[0],
+		target.MotorPins[1],
 	}
 
 	targetDir := strings.ToLower(target.Board)

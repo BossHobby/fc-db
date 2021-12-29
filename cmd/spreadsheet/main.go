@@ -82,7 +82,7 @@ func main() {
 		addEntry(t.OSD, "OSD")
 		addEntry(t.DataFlash, "DATA_FLASH")
 		addEntry(t.SDCard, "SD_CARD")
-		addEntry(t.RX, "RX")
+		addEntry(&t.RX.SPIDevice, "RX")
 
 		if err := w.Write(entries); err != nil {
 			log.Fatal(err)
