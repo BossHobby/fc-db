@@ -84,7 +84,7 @@
   "usb_detect_pin": "PC4",
   "battery_pin": {
     "pin": "PC3",
-    "adc_channel": -1
+    "adc_channel": 13
   },
   "gyros": [
     {
