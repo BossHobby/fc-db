@@ -74,7 +74,7 @@
   "usb_detect_pin": "PA9",
   "battery_pin": {
     "pin": "PA3",
-    "adc_channel": -1
+    "adc_channel": 3
   },
   "gyros": [
     {

@@ -95,7 +95,7 @@
   "inverter_pins": [],
   "battery_pin": {
     "pin": "PC0",
-    "adc_channel": -1
+    "adc_channel": 10
   },
   "gyros": [
     {
