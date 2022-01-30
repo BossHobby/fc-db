@@ -57,7 +57,7 @@ var adcChannels = map[string]map[string]int{
 		"PA6": 6,
 		"PA7": 7,
 	},
-	"STM32F711": {
+	"STM32F7X2": {
 		"PC0": 10,
 		"PC1": 11,
 		"PC2": 12,
