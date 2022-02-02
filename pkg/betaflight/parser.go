@@ -159,7 +159,7 @@ func mapSet(t *fc.Target, key, value string) {
 		}
 		t.RX.Port = util.MustParseInt(value)
 
-	case "ibat_scale":
+	case "ibata_scale":
 		if t.CurrentPin == nil {
 			t.CurrentPin = &fc.ADCPin{}
 		}
