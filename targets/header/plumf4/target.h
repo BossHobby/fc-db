@@ -51,7 +51,7 @@
 #define VBAT_DIVIDER_R2 1000
 
 #define IBAT_PIN PIN_C3
-#define IBAT_SCALE 179
+#define IBAT_SCALE 444
 
 // MOTOR PINS
 //S3_OUT
