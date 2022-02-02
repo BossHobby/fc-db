@@ -67,7 +67,11 @@
   "usb_detect_pin": "PC15",
   "battery_pin": {
     "pin": "PB1",
-    "adc_channel": 9
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PA1",
+    "scale": 179
   },
   "gyros": [
     {

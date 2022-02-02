@@ -50,6 +50,9 @@
 
 
 
+#define IBAT_PIN PIN_C1
+#define IBAT_SCALE 179
+
 // MOTOR PINS
 //S3_OUT
 #define MOTOR_PIN0 MOTOR_PIN_PC8

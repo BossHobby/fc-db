@@ -67,7 +67,11 @@
   "inverter_pins": [],
   "battery_pin": {
     "pin": "PB0",
-    "adc_channel": 8
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PB1",
+    "scale": 179
   },
   "gyros": [
     {

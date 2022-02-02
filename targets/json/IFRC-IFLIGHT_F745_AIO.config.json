@@ -107,7 +107,11 @@
   "usb_detect_pin": "PC4",
   "battery_pin": {
     "pin": "PC3",
-    "adc_channel": 13
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PC2",
+    "scale": 179
   },
   "gyros": [
     {

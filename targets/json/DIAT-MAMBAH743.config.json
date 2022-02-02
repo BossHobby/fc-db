@@ -124,7 +124,11 @@
   "usb_detect_pin": "PE6",
   "battery_pin": {
     "pin": "PC1",
-    "adc_channel": -1
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PC3",
+    "scale": 179
   },
   "gyros": [
     {

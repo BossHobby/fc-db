@@ -70,7 +70,11 @@
   ],
   "battery_pin": {
     "pin": "PA0",
-    "adc_channel": 0
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PA1",
+    "scale": 179
   },
   "gyros": [
     {

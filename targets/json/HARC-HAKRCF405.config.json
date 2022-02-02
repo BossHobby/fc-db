@@ -95,7 +95,11 @@
   ],
   "battery_pin": {
     "pin": "PC1",
-    "adc_channel": 11
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PC2",
+    "scale": 179
   },
   "gyros": [
     {

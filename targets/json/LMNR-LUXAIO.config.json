@@ -85,6 +85,10 @@
     }
   ],
   "inverter_pins": [],
+  "current_pin": {
+    "pin": "PC1",
+    "scale": 179
+  },
   "gyros": [
     {
       "index": 1,

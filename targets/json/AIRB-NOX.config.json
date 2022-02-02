@@ -71,7 +71,7 @@
   ],
   "battery_pin": {
     "pin": "PA5",
-    "adc_channel": 5
+    "scale": 0
   },
   "gyros": [
     {

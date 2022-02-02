@@ -103,7 +103,11 @@
   "usb_detect_pin": "PB12",
   "battery_pin": {
     "pin": "PC5",
-    "adc_channel": 15
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PC4",
+    "scale": 179
   },
   "gyros": [
     {
