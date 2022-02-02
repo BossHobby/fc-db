@@ -53,8 +53,8 @@ type PinDevice struct {
 }
 
 type ADCPin struct {
-	Pin        Pin `json:"pin"`
-	ADCChannel int `json:"adc_channel"`
+	Pin   Pin `json:"pin"`
+	Scale int `json:"scale"`
 }
 
 type UARTPort struct {
@@ -100,6 +100,7 @@ type Target struct {
 	InverterPins []PinDevice `json:"inverter_pins"`
 	USBDetectPin *Pin        `json:"usb_detect_pin,omitempty"`
 	BatteryPin   *ADCPin     `json:"battery_pin,omitempty"`
+	CurrentPin   *ADCPin     `json:"current_pin,omitempty"`
 
 	Gyros     []GyroDevice `json:"gyros"`
 	OSD       *SPIDevice   `json:"osd,omitempty"`

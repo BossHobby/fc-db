@@ -80,20 +80,14 @@ const headerTemplate = `
 
 {{ if .BatteryPin -}}
 //VOLTAGE DIVIDER
-#define BATTERYPIN {{ .BatteryPin.Pin | pinEnum }}
-#define BATTERY_ADC_CHANNEL LL_ADC_CHANNEL_{{ .BatteryPin.ADCChannel }}
+#define VBAT_PIN {{ .BatteryPin.Pin | pinEnum }}
+#define VBAT_DIVIDER_R1 10000
+#define VBAT_DIVIDER_R2 1000
+{{- end }}
 
-#ifndef VOLTAGE_DIVIDER_R1
-#define VOLTAGE_DIVIDER_R1 10000
-#endif
-
-#ifndef VOLTAGE_DIVIDER_R2
-#define VOLTAGE_DIVIDER_R2 1000
-#endif
-
-#ifndef ADC_REF_VOLTAGE
-#define ADC_REF_VOLTAGE 3.3
-#endif
+{{ if .CurrentPin -}}
+#define IBAT_PIN {{ .CurrentPin.Pin | pinEnum }}
+#define IBAT_SCALE {{ .CurrentPin.Scale }}
 {{- end }}
 
 // MOTOR PINS

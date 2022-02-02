@@ -62,8 +62,13 @@ func mapResource(t *fc.Target, resource string, index int, pin fc.Pin) {
 
 	case "ADC_BATT":
 		t.BatteryPin = &fc.ADCPin{
-			Pin:        pin,
-			ADCChannel: getAdcChannel(pin, t.MCU),
+			Pin: pin,
+		}
+
+	case "ADC_CURR":
+		t.CurrentPin = &fc.ADCPin{
+			Pin:   pin,
+			Scale: 179,
 		}
 
 	case "SERIAL_TX":
@@ -154,6 +159,11 @@ func mapSet(t *fc.Target, key, value string) {
 		}
 		t.RX.Port = util.MustParseInt(value)
 
+	case "ibat_scale":
+		if t.CurrentPin == nil {
+			t.CurrentPin = &fc.ADCPin{}
+		}
+		t.CurrentPin.Scale = util.MustParseInt(value)
 	}
 }
 
