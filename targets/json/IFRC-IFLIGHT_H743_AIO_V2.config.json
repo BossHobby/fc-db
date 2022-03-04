@@ -1,7 +1,7 @@
 {
-  "mcu": "STM32G47X",
-  "board": "NEUTRONRCG4AIO",
-  "manufacturer": "NERC",
+  "mcu": "STM32H743",
+  "board": "IFLIGHT_H743_AIO_V2",
+  "manufacturer": "IFRC",
   "uart_ports": [
     {
       "index": 1,
@@ -17,6 +17,26 @@
       "index": 3,
       "tx_pin": "PB10",
       "rx_pin": "PB11"
+    },
+    {
+      "index": 4,
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
+    },
+    {
+      "index": 7,
+      "tx_pin": "PE8",
+      "rx_pin": "PE7"
+    },
+    {
+      "index": 8,
+      "tx_pin": "PE1",
+      "rx_pin": "PE0"
     }
   ],
   "spi_ports": [
@@ -36,62 +56,90 @@
       "index": 3,
       "sclk_pin": "PC10",
       "miso_pin": "PC11",
-      "mosi_pin": "PB5"
+      "mosi_pin": "PC12"
+    },
+    {
+      "index": 4,
+      "sclk_pin": "PE2",
+      "miso_pin": "PE5",
+      "mosi_pin": "PE6"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PD2"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PB1"
-    },
-    {
-      "index": 2,
       "pin": "PB0"
     },
     {
+      "index": 2,
+      "pin": "PB1"
+    },
+    {
       "index": 3,
-      "pin": "PB3"
+      "pin": "PB4"
     },
     {
       "index": 4,
-      "pin": "PB4"
+      "pin": "PB5"
+    },
+    {
+      "index": 5,
+      "pin": "PD12"
+    },
+    {
+      "index": 6,
+      "pin": "PD13"
+    },
+    {
+      "index": 7,
+      "pin": "PC8"
+    },
+    {
+      "index": 8,
+      "pin": "PC9"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC15"
+      "pin": "PC13"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PA0",
+    "pin": "PC3",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PA1",
+    "pin": "PC2",
     "scale": 100
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PC4",
+      "exti_pin": "PD0",
       "port": 1,
       "cs_pin": "PA4"
+    },
+    {
+      "index": 2,
+      "exti_pin": "PD8",
+      "port": 0,
+      "cs_pin": "PB12"
     }
   ],
   "osd": {
-    "port": 2,
-    "cs_pin": "PB12"
+    "port": 4,
+    "cs_pin": "PE4"
   },
   "data_flash": {
     "port": 3,
-    "cs_pin": "PB9"
+    "cs_pin": ""
   }
 }

@@ -1,22 +1,17 @@
 {
-  "mcu": "STM32G47X",
-  "board": "NEUTRONRCG4AIO",
-  "manufacturer": "NERC",
+  "mcu": "STM32F411",
+  "board": "IFLIGHT_BLITZ_F411RX",
+  "manufacturer": "IFRC",
   "uart_ports": [
     {
       "index": 1,
       "tx_pin": "PA9",
-      "rx_pin": "PA10"
+      "rx_pin": ""
     },
     {
       "index": 2,
       "tx_pin": "PA2",
       "rx_pin": "PA3"
-    },
-    {
-      "index": 3,
-      "tx_pin": "PB10",
-      "rx_pin": "PB11"
     }
   ],
   "spi_ports": [
@@ -34,54 +29,49 @@
     },
     {
       "index": 3,
-      "sclk_pin": "PC10",
-      "miso_pin": "PC11",
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
       "mosi_pin": "PB5"
     }
   ],
-  "beeper_pins": [
-    {
-      "index": 1,
-      "pin": "PC14"
-    }
-  ],
+  "beeper_pins": [],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PB1"
+      "pin": "PA0"
     },
     {
       "index": 2,
-      "pin": "PB0"
+      "pin": "PA1"
     },
     {
       "index": 3,
-      "pin": "PB3"
+      "pin": "PB6"
     },
     {
       "index": 4,
-      "pin": "PB4"
+      "pin": "PB7"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC15"
+      "pin": "PC13"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PA0",
+    "pin": "PB0",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PA1",
-    "scale": 100
+    "pin": "PB1",
+    "scale": 180
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PC4",
+      "exti_pin": "PB10",
       "port": 1,
       "cs_pin": "PA4"
     }
@@ -90,8 +80,9 @@
     "port": 2,
     "cs_pin": "PB12"
   },
-  "data_flash": {
+  "rx": {
+    "exti_pin": "PC14",
     "port": 3,
-    "cs_pin": "PB9"
+    "cs_pin": "PA15"
   }
 }
