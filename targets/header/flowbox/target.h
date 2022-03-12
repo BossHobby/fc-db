@@ -40,6 +40,10 @@
 
 
 
+#define USE_M25P16
+#define M25P16_SPI_PORT SPI_PORT3
+#define M25P16_NSS_PIN PIN_A15
+
 
 
 

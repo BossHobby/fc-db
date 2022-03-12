@@ -78,6 +78,12 @@ const headerTemplate = `
 #define MAX7456_NSS {{ .OSD.CSPin | pinEnum }}
 {{- end }}
 
+{{ if .DataFlash -}}
+#define USE_M25P16
+#define M25P16_SPI_PORT SPI_PORT{{ .DataFlash.Port }}
+#define M25P16_NSS_PIN {{ .DataFlash.CSPin | pinEnum }}
+{{- end }}
+
 {{ if .BatteryPin -}}
 //VOLTAGE DIVIDER
 #define VBAT_PIN {{ .BatteryPin.Pin | pinEnum }}
