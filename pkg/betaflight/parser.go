@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/NotFastEnuf/fc-db/pkg/fc"
-	"github.com/NotFastEnuf/fc-db/pkg/util"
+	"github.com/BossHobby/fc-db/pkg/fc"
+	"github.com/BossHobby/fc-db/pkg/util"
 )
 
 func ensureSpi(d **fc.SPIDevice) *fc.SPIDevice {

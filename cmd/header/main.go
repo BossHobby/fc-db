@@ -12,7 +12,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/NotFastEnuf/fc-db/pkg/fc"
+	"github.com/BossHobby/fc-db/pkg/fc"
 )
 
 const headerTemplate = `

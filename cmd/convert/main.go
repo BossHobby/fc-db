@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/NotFastEnuf/fc-db/pkg/betaflight"
+	"github.com/BossHobby/fc-db/pkg/betaflight"
 )
 
 func parseConfig(filename string, w io.Writer) error {

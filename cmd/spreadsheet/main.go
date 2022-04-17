@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/NotFastEnuf/fc-db/pkg/fc"
+	"github.com/BossHobby/fc-db/pkg/fc"
 )
 
 func readFile(filename string) (*fc.Target, error) {

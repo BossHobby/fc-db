@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/NotFastEnuf/fc-db/pkg/util"
+	"github.com/BossHobby/fc-db/pkg/util"
 )
 
 type Pin struct {
