@@ -1,0 +1,59 @@
+
+#include "config.h"
+#include "config_helper.h"
+
+#define NUCLEOF722
+
+//PORTS
+#define SPI_PORTS \
+  SPI1_PA5PA6PA7  \
+  SPI4_PE12PE13PE14  \
+
+#define USART_PORTS \
+	USART2_PD6PD5 \
+	USART3_PD9PD8 \
+	USART4_PA1PA0
+
+//LEDS
+#define LED_NUMBER 2
+#define LED1PIN PIN_B7
+#define LED1_INVERT
+#define LED2PIN PIN_B14
+#define LED2_INVERT
+
+
+
+//GYRO
+#define GYRO_SPI_PORT SPI_PORT0
+#define GYRO_NSS PIN_0
+#define GYRO_INT PIN_B15
+#define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
+
+//RADIO
+
+
+#ifdef SERIAL_RX
+#define RX_USART USART_PORT2
+#endif
+
+
+
+
+
+//VOLTAGE DIVIDER
+#define VBAT_PIN PIN_A3
+#define VBAT_DIVIDER_R1 10000
+#define VBAT_DIVIDER_R2 1000
+
+#define IBAT_PIN PIN_C0
+#define IBAT_SCALE 179
+
+// MOTOR PINS
+//S3_OUT
+#define MOTOR_PIN0 MOTOR_PIN_PB5
+//S4_OUT
+#define MOTOR_PIN1 MOTOR_PIN_PB9
+//S1_OUT
+#define MOTOR_PIN2 MOTOR_PIN_PB8
+//S2_OUT
+#define MOTOR_PIN3 MOTOR_PIN_PA3

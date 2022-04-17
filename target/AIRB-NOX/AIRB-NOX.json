@@ -1,0 +1,87 @@
+{
+  "mcu": "STM32F411",
+  "board": "NOX",
+  "manufacturer": "AIRB",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PB6",
+      "rx_pin": "PB7"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PA1"
+    },
+    {
+      "index": 2,
+      "pin": "PA7"
+    },
+    {
+      "index": 3,
+      "pin": "PB8"
+    },
+    {
+      "index": 4,
+      "pin": "PB1"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PA4"
+    }
+  ],
+  "inverter_pins": [
+    {
+      "index": 2,
+      "pin": "PC14"
+    }
+  ],
+  "battery_pin": {
+    "pin": "PA5",
+    "scale": 0
+  },
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "",
+      "port": 2,
+      "cs_pin": "PB12"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PA10"
+  },
+  "data_flash": {
+    "port": 1,
+    "cs_pin": "PA15"
+  }
+}
