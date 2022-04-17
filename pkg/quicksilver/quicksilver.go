@@ -1,13 +1,8 @@
-package main
+package quicksilver
 
 import (
-	"encoding/json"
-	"flag"
 	"fmt"
-	"io/ioutil"
-	"log"
 	"os"
-	"path/filepath"
 	"reflect"
 	"strings"
 	"text/template"
@@ -44,15 +39,10 @@ const headerTemplate = `
 {{- end }}
 
 //GYRO
-#define GYRO_TYPE MPU6XXX
 #define GYRO_SPI_PORT SPI_PORT{{ (index .Gyros 0).Port }}
 #define GYRO_NSS {{ (index .Gyros 0).CSPin | pinEnum }}
 #define GYRO_INT {{ (index .Gyros 0).EXTI | pinEnum }}
-#define SENSOR_ROTATE_90_CCW
-#define GYRO_ID_1 0x68
-#define GYRO_ID_2 0x73
-#define GYRO_ID_3 0x78
-#define GYRO_ID_4 0x71
+#define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
 
 //RADIO
 {{ if .RX -}}
@@ -103,27 +93,7 @@ const headerTemplate = `
 {{- end }}
 `
 
-func readTarget(filename string) (*fc.Target, error) {
-	f, err := os.Open(filename)
-	if err != nil {
-		return nil, err
-	}
-	defer f.Close()
-
-	target := new(fc.Target)
-	if err := json.NewDecoder(f).Decode(target); err != nil {
-		return nil, err
-	}
-
-	return target, nil
-}
-
-func writeHeader(filename string) error {
-	target, err := readTarget(filename)
-	if err != nil {
-		return err
-	}
-
+func WriteHeader(target *fc.Target, filename string) error {
 	funcMap := template.FuncMap{
 		"mcuShort": func(mcu string) string {
 			return strings.TrimPrefix(mcu, "STM32")
@@ -144,63 +114,15 @@ func writeHeader(filename string) error {
 		target.MotorPins[1],
 	}
 
-	targetDir := strings.ToLower(target.Board)
-	if err := os.Mkdir(targetDir, 0755); err != nil && !os.IsExist(err) {
+	f, err := os.Create(filename)
+	if err != nil {
 		return err
 	}
+	defer f.Close()
 
-	{
-		f, err := os.Create(filepath.Join(targetDir, "target.h"))
-		if err != nil {
-			return err
-		}
-		defer f.Close()
-
-		t := template.Must(template.New("header").Funcs(funcMap).Parse(headerTemplate))
-		if err := t.Execute(f, target); err != nil {
-			return err
-		}
+	t := template.Must(template.New("header").Funcs(funcMap).Parse(headerTemplate))
+	if err := t.Execute(f, target); err != nil {
+		return err
 	}
-
 	return nil
-}
-
-func main() {
-	flag.Parse()
-
-	if flag.NArg() != 1 {
-		log.Println("missing <filename>")
-		os.Exit(1)
-	}
-
-	filename := flag.Arg(0)
-
-	s, err := os.Stat(filename)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	if s.IsDir() {
-		files, err := ioutil.ReadDir(filename)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		for _, f := range files {
-			path := filepath.Join(filename, f.Name())
-			if f.IsDir() {
-				continue
-			}
-
-			log.Printf("processing %s\n", path)
-			if err := writeHeader(path); err != nil {
-				log.Fatal(err)
-			}
-		}
-	} else {
-		if err := writeHeader(filename); err != nil {
-			log.Fatal(err)
-		}
-	}
-
 }
