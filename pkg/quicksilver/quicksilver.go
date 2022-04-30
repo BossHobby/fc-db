@@ -74,6 +74,12 @@ const headerTemplate = `
 #define M25P16_NSS_PIN {{ .DataFlash.CSPin | pinEnum }}
 {{- end }}
 
+{{ if .SDCard -}}
+#define USE_SDCARD
+#define SDCARD_SPI_PORT SPI_PORT{{ .SDCard.Port }}
+#define SDCARD_NSS_PIN {{ .SDCard.CSPin | pinEnum }}
+{{- end }}
+
 {{ if .BatteryPin -}}
 //VOLTAGE DIVIDER
 #define VBAT_PIN {{ .BatteryPin.Pin | pinEnum }}
