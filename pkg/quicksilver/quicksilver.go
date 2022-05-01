@@ -19,7 +19,7 @@ const headerTemplate = `
 //PORTS
 #define SPI_PORTS \
 {{- range $i, $v := .SPIPorts }}
-  SPI{{ $v.Index }}_{{ $v.SCLKPin }}{{ $v.MISOPin }}{{ $v.MOSIPin }}  \
+  SPI{{ $v.Index }}_{{ $v.SCLKPin }}{{ $v.MISOPin }}{{ $v.MOSIPin }}{{ if not (lastIndex $i $.SPIPorts) }} \{{ end }}
 {{- end }}
 
 #define USART_PORTS \
