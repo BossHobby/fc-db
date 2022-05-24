@@ -122,7 +122,7 @@
     "port": 2,
     "cs_pin": "PB12"
   },
-  "data_flash": {
+  "sd_card": {
     "port": 3,
     "cs_pin": "PB9"
   }

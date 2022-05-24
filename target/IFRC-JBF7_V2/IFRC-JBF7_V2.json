@@ -1,7 +1,7 @@
 {
   "mcu": "STM32F7X2",
-  "board": "BETAFPVF722",
-  "manufacturer": "BEFH",
+  "board": "JBF7_V2",
+  "manufacturer": "IFRC",
   "uart_ports": [
     {
       "index": 1,
@@ -15,13 +15,13 @@
     },
     {
       "index": 3,
-      "tx_pin": "PB10",
-      "rx_pin": "PB11"
+      "tx_pin": "PC10",
+      "rx_pin": "PC11"
     },
     {
       "index": 4,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
+      "tx_pin": "PA0",
+      "rx_pin": "PA1"
     },
     {
       "index": 5,
@@ -30,7 +30,7 @@
     },
     {
       "index": 6,
-      "tx_pin": "PC6",
+      "tx_pin": "",
       "rx_pin": "PC7"
     }
   ],
@@ -45,7 +45,7 @@
       "index": 2,
       "sclk_pin": "PB13",
       "miso_pin": "PB14",
-      "mosi_pin": "PB15"
+      "mosi_pin": "PC3"
     },
     {
       "index": 3,
@@ -57,25 +57,25 @@
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PC13"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PB0"
-    },
-    {
-      "index": 2,
       "pin": "PB1"
     },
     {
+      "index": 2,
+      "pin": "PB0"
+    },
+    {
       "index": 3,
-      "pin": "PA1"
+      "pin": "PC8"
     },
     {
       "index": 4,
-      "pin": "PA0"
+      "pin": "PC9"
     },
     {
       "index": 5,
@@ -84,6 +84,14 @@
     {
       "index": 6,
       "pin": "PB7"
+    },
+    {
+      "index": 7,
+      "pin": "PB10"
+    },
+    {
+      "index": 8,
+      "pin": "PB11"
     }
   ],
   "led_pins": [
@@ -93,13 +101,14 @@
     }
   ],
   "inverter_pins": [],
+  "usb_detect_pin": "PB2",
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PC2",
     "scale": 0
   },
   "current_pin": {
     "pin": "PC1",
-    "scale": 450
+    "scale": 200
   },
   "gyros": [
     {
@@ -107,20 +116,18 @@
       "exti_pin": "PC4",
       "port": 1,
       "cs_pin": "PA4"
-    },
-    {
-      "index": 2,
-      "exti_pin": "PB2",
-      "port": 0,
-      "cs_pin": "PC3"
     }
   ],
   "osd": {
+    "port": 2,
+    "cs_pin": "PB12"
+  },
+  "data_flash": {
     "port": 3,
     "cs_pin": "PA15"
   },
-  "data_flash": {
-    "port": 2,
-    "cs_pin": "PB12"
+  "sd_card": {
+    "port": 3,
+    "cs_pin": "PA15"
   }
 }

@@ -1,13 +1,8 @@
 {
-  "mcu": "STM32F405",
-  "board": "AIKONF4",
-  "manufacturer": "AIKO",
+  "mcu": "STM32F745",
+  "board": "NBD_INFINITYAIOV2",
+  "manufacturer": "NEBD",
   "uart_ports": [
-    {
-      "index": 1,
-      "tx_pin": "PA9",
-      "rx_pin": "PA10"
-    },
     {
       "index": 2,
       "tx_pin": "PA2",
@@ -19,9 +14,24 @@
       "rx_pin": "PB11"
     },
     {
-      "index": 4,
-      "tx_pin": "PA0",
-      "rx_pin": "PA1"
+      "index": 7,
+      "tx_pin": "PE8",
+      "rx_pin": ""
+    },
+    {
+      "index": 8,
+      "tx_pin": "PE1",
+      "rx_pin": "PE0"
+    },
+    {
+      "index": 1,
+      "tx_pin": "",
+      "rx_pin": "PB7"
+    },
+    {
+      "index": 5,
+      "tx_pin": "",
+      "rx_pin": "PD2"
     }
   ],
   "spi_ports": [
@@ -32,22 +42,22 @@
       "mosi_pin": "PA7"
     },
     {
-      "index": 2,
-      "sclk_pin": "PB13",
-      "miso_pin": "PB14",
-      "mosi_pin": "PB15"
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PD6"
     },
     {
-      "index": 3,
-      "sclk_pin": "PC10",
-      "miso_pin": "PC11",
-      "mosi_pin": "PC12"
+      "index": 4,
+      "sclk_pin": "PE12",
+      "miso_pin": "PE13",
+      "mosi_pin": "PE14"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PB5"
+      "pin": "PD13"
     }
   ],
   "motor_pins": [
@@ -66,43 +76,29 @@
     {
       "index": 4,
       "pin": "PC9"
-    },
-    {
-      "index": 5,
-      "pin": "PB0"
-    },
-    {
-      "index": 6,
-      "pin": "PB1"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PB4"
-    }
-  ],
-  "inverter_pins": [
-    {
-      "index": 1,
       "pin": "PC0"
     }
   ],
-  "usb_detect_pin": "PD2",
+  "inverter_pins": [],
   "battery_pin": {
-    "pin": "PC2",
+    "pin": "PC1",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 179
+    "pin": "PC2",
+    "scale": 230
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PC4",
-      "port": 1,
-      "cs_pin": "PA4"
+      "exti_pin": "PB1",
+      "port": 4,
+      "cs_pin": "PE11"
     }
   ],
   "osd": {
@@ -110,7 +106,7 @@
     "cs_pin": "PA15"
   },
   "data_flash": {
-    "port": 2,
-    "cs_pin": "PB12"
+    "port": 1,
+    "cs_pin": "PB0"
   }
 }
