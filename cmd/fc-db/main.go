@@ -82,6 +82,19 @@ func targetToQuicksilver(source string) error {
 	return nil
 }
 
+func targetFromDump(source string, dest string) error {
+	t, err := betaflight.ParseConfig(source)
+	if err != nil {
+		return err
+	}
+
+	if err := quicksilver.WriteHeader(t, dest); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func targetSubcommands() error {
 	if flag.NArg() < 2 {
 		log.Println("missing target command")
@@ -101,6 +114,16 @@ func targetSubcommands() error {
 			return nil
 		}
 		return targetToQuicksilver(flag.Arg(2))
+	case "from-dump":
+		if flag.NArg() < 3 {
+			log.Println("missing <source>")
+			return nil
+		}
+		if flag.NArg() < 4 {
+			log.Println("missing <dest>")
+			return nil
+		}
+		return targetFromDump(flag.Arg(2), flag.Arg(3))
 	}
 
 	return nil
