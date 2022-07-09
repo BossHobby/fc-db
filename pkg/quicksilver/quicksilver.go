@@ -99,7 +99,7 @@ const headerTemplate = `
 {{- end }}
 `
 
-func WriteHeader(target *fc.Target, filename string) error {
+func WriteHeader(target fc.Target, filename string) error {
 	funcMap := template.FuncMap{
 		"mcuShort": func(mcu string) string {
 			return strings.TrimPrefix(mcu, "STM32")

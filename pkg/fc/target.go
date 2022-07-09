@@ -2,7 +2,6 @@ package fc
 
 import (
 	"encoding/json"
-	"os"
 	"strconv"
 
 	"github.com/BossHobby/fc-db/pkg/util"
@@ -122,35 +121,4 @@ func NewTarget() *Target {
 
 		Gyros: make([]GyroDevice, 0),
 	}
-}
-
-func ReadTarget(filename string) (*Target, error) {
-	f, err := os.Open(filename)
-	if err != nil {
-		return nil, err
-	}
-	defer f.Close()
-
-	target := new(Target)
-	if err := json.NewDecoder(f).Decode(target); err != nil {
-		return nil, err
-	}
-
-	return target, nil
-}
-
-func WriteTarget(filename string, t *Target) error {
-	w, err := os.Create(filename)
-	if err != nil {
-		return err
-	}
-	defer w.Close()
-
-	enc := json.NewEncoder(w)
-	enc.SetIndent("", "  ")
-	if err := enc.Encode(t); err != nil {
-		return err
-	}
-
-	return nil
 }
