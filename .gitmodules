@@ -1,3 +1,3 @@
 [submodule "betaflight/source"]
-	path = betaflight/source
+	path = betaflight
 	url = https://github.com/betaflight/unified-targets.git
