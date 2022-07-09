@@ -34,7 +34,7 @@ func parseUnified(source string) error {
 }
 
 func targetFromUnified(filename string) error {
-	source := filepath.Join(filename, "source", "configs", "default")
+	source := filepath.Join(filename, "configs", "default")
 
 	files, err := ioutil.ReadDir(source)
 	if err != nil {
