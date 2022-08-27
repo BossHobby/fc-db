@@ -1,12 +1,12 @@
 {
   "mcu": "STM32F7X2",
-  "board": "AIKONF7",
-  "manufacturer": "AIKO",
+  "board": "MAMBAF722_2022B",
+  "manufacturer": "DIAT",
   "uart_ports": [
     {
       "index": 1,
-      "tx_pin": "PA9",
-      "rx_pin": "PA10"
+      "tx_pin": "PB6",
+      "rx_pin": "PB7"
     },
     {
       "index": 2,
@@ -15,8 +15,8 @@
     },
     {
       "index": 3,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
     },
     {
       "index": 4,
@@ -27,6 +27,11 @@
       "index": 5,
       "tx_pin": "PC12",
       "rx_pin": "PD2"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
     }
   ],
   "spi_ports": [
@@ -39,70 +44,74 @@
     {
       "index": 2,
       "sclk_pin": "PB13",
-      "miso_pin": "PC2",
+      "miso_pin": "PB14",
       "mosi_pin": "PB15"
     },
     {
       "index": 3,
-      "sclk_pin": "PB3",
-      "miso_pin": "PB4",
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
       "mosi_pin": "PB5"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PC15"
+      "pin": "PB2"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC6"
-    },
-    {
-      "index": 2,
-      "pin": "PC7"
-    },
-    {
-      "index": 3,
       "pin": "PC8"
     },
     {
-      "index": 4,
+      "index": 2,
       "pin": "PC9"
     },
     {
+      "index": 3,
+      "pin": "PA8"
+    },
+    {
+      "index": 4,
+      "pin": "PA9"
+    },
+    {
       "index": 5,
-      "pin": "PB6"
+      "pin": "PB0"
     },
     {
       "index": 6,
-      "pin": "PB8"
+      "pin": "PB1"
     },
     {
       "index": 7,
-      "pin": "PB7"
+      "pin": "PA10"
     },
     {
       "index": 8,
-      "pin": "PB1"
+      "pin": "PB4"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC13"
+      "pin": "PC15"
+    },
+    {
+      "index": 2,
+      "pin": "PC14"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PC1",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 179
+    "pin": "PC3",
+    "scale": 115
   },
   "gyros": [
     {
@@ -118,6 +127,6 @@
   },
   "data_flash": {
     "port": 3,
-    "cs_pin": "PB0"
+    "cs_pin": "PA15"
   }
 }

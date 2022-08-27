@@ -1,0 +1,74 @@
+{
+  "mcu": "STM32F411",
+  "board": "FLOWBOXV2",
+  "manufacturer": "NERC",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PB8"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PA0"
+    },
+    {
+      "index": 2,
+      "pin": "PB0"
+    },
+    {
+      "index": 3,
+      "pin": "PB1"
+    },
+    {
+      "index": 4,
+      "pin": "PB10"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [],
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "PA1",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "sd_card": {
+    "port": 3,
+    "cs_pin": "PA15"
+  }
+}

@@ -270,6 +270,11 @@
     "manufacturer": "DIAT"
   },
   {
+    "mcu": "STM32F405",
+    "board": "MAMBAF405_2022B",
+    "manufacturer": "DIAT"
+  },
+  {
     "mcu": "STM32F411",
     "board": "MAMBAF411",
     "manufacturer": "DIAT"
@@ -282,6 +287,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "MAMBAF722_2022A",
+    "manufacturer": "DIAT"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "MAMBAF722_2022B",
     "manufacturer": "DIAT"
   },
   {
@@ -333,6 +343,11 @@
     "mcu": "STM32F7X2",
     "board": "EACHINEF722_AIO",
     "manufacturer": "EACH"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "BABYHAWK_II_HD",
+    "manufacturer": "EMAX"
   },
   {
     "mcu": "STM32F411",
@@ -436,6 +451,16 @@
   },
   {
     "mcu": "STM32F405",
+    "board": "FLYWOOF405NANO",
+    "manufacturer": "FLWO"
+  },
+  {
+    "mcu": "STM32F405",
+    "board": "FLYWOOF405PRO",
+    "manufacturer": "FLWO"
+  },
+  {
+    "mcu": "STM32F405",
     "board": "FLYWOOF405S_AIO",
     "manufacturer": "FLWO"
   },
@@ -535,6 +560,11 @@
     "manufacturer": "FOXE"
   },
   {
+    "mcu": "STM32F7X2",
+    "board": "FOXEERF722V4",
+    "manufacturer": "FOXE"
+  },
+  {
     "mcu": "STM32F745",
     "board": "FOXEERF745V2_AIO",
     "manufacturer": "FOXE"
@@ -565,6 +595,11 @@
     "manufacturer": "FRSK"
   },
   {
+    "mcu": "",
+    "board": "GEELANGF411",
+    "manufacturer": "GEEL"
+  },
+  {
     "mcu": "STM32F405",
     "board": "XILOF4",
     "manufacturer": "GEFP"
@@ -577,6 +612,11 @@
   {
     "mcu": "STM32F411",
     "board": "GEPRCF411",
+    "manufacturer": "GEPR"
+  },
+  {
+    "mcu": "STM32F411SX1280",
+    "board": "GEPRCF411SX1280",
     "manufacturer": "GEPR"
   },
   {
@@ -777,6 +817,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "HGLRCF722",
+    "manufacturer": "HGLR"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "HGLRCF722E",
     "manufacturer": "HGLR"
   },
   {
@@ -1095,6 +1140,11 @@
     "manufacturer": "NEBD"
   },
   {
+    "mcu": "",
+    "board": "NBD_CRICKETF7V2",
+    "manufacturer": "NEBD"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "NBD_INFINITYAIO",
     "manufacturer": "NEBD"
@@ -1120,6 +1170,11 @@
     "manufacturer": "NERC"
   },
   {
+    "mcu": "STM32F411",
+    "board": "FLOWBOXV2",
+    "manufacturer": "NERC"
+  },
+  {
     "mcu": "STM32G47X",
     "board": "HYBRIDG4",
     "manufacturer": "NERC"
@@ -1127,6 +1182,11 @@
   {
     "mcu": "STM32F405",
     "board": "NEUTRONRCF407",
+    "manufacturer": "NERC"
+  },
+  {
+    "mcu": "STM32F411SX1280",
+    "board": "NEUTRONRCF411SX1280",
     "manufacturer": "NERC"
   },
   {
@@ -1420,6 +1480,11 @@
     "manufacturer": "TMTR"
   },
   {
+    "mcu": "STM32F411",
+    "board": "TMVELOXF411",
+    "manufacturer": "TMTR"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "TMVELOXF7",
     "manufacturer": "TMTR"
@@ -1517,6 +1582,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "ZEEZF7V2",
+    "manufacturer": "ZEEZ"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "ZEEZF7V3",
     "manufacturer": "ZEEZ"
   },
   {

@@ -1,7 +1,7 @@
 {
-  "mcu": "STM32F7X2",
-  "board": "AIKONF7",
-  "manufacturer": "AIKO",
+  "mcu": "",
+  "board": "GEELANGF411",
+  "manufacturer": "GEEL",
   "uart_ports": [
     {
       "index": 1,
@@ -12,21 +12,6 @@
       "index": 2,
       "tx_pin": "PA2",
       "rx_pin": "PA3"
-    },
-    {
-      "index": 3,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
-    },
-    {
-      "index": 4,
-      "tx_pin": "PA0",
-      "rx_pin": "PA1"
-    },
-    {
-      "index": 5,
-      "tx_pin": "PC12",
-      "rx_pin": "PD2"
     }
   ],
   "spi_ports": [
@@ -39,75 +24,66 @@
     {
       "index": 2,
       "sclk_pin": "PB13",
-      "miso_pin": "PC2",
+      "miso_pin": "PB14",
       "mosi_pin": "PB15"
-    },
-    {
-      "index": 3,
-      "sclk_pin": "PB3",
-      "miso_pin": "PB4",
-      "mosi_pin": "PB5"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PC15"
+      "pin": "PB2"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC6"
+      "pin": "PB4"
     },
     {
       "index": 2,
-      "pin": "PC7"
+      "pin": "PB5"
     },
     {
       "index": 3,
-      "pin": "PC8"
-    },
-    {
-      "index": 4,
-      "pin": "PC9"
-    },
-    {
-      "index": 5,
       "pin": "PB6"
     },
     {
-      "index": 6,
-      "pin": "PB8"
-    },
-    {
-      "index": 7,
+      "index": 4,
       "pin": "PB7"
     },
     {
-      "index": 8,
-      "pin": "PB1"
+      "index": 5,
+      "pin": "PA0"
+    },
+    {
+      "index": 6,
+      "pin": "PB10"
     }
   ],
   "led_pins": [
     {
       "index": 1,
       "pin": "PC13"
+    },
+    {
+      "index": 2,
+      "pin": "PC14"
     }
   ],
   "inverter_pins": [],
+  "usb_detect_pin": "PC15",
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PB0",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 179
+    "pin": "PB1",
+    "scale": 100
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PC4",
+      "exti_pin": "PA1",
       "port": 1,
       "cs_pin": "PA4"
     }
@@ -117,7 +93,7 @@
     "cs_pin": "PB12"
   },
   "data_flash": {
-    "port": 3,
-    "cs_pin": "PB0"
+    "port": 2,
+    "cs_pin": "PB3"
   }
 }
