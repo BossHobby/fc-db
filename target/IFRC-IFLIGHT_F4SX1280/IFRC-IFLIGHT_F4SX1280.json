@@ -1,37 +1,17 @@
 {
-  "mcu": "STM32F7X2",
-  "board": "LUXAIO",
-  "manufacturer": "LMNR",
+  "mcu": "STM32F411SX1280",
+  "board": "IFLIGHT_F4SX1280",
+  "manufacturer": "IFRC",
   "uart_ports": [
     {
       "index": 1,
       "tx_pin": "PA9",
-      "rx_pin": "PA10"
+      "rx_pin": ""
     },
     {
       "index": 2,
       "tx_pin": "PA2",
-      "rx_pin": ""
-    },
-    {
-      "index": 3,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
-    },
-    {
-      "index": 4,
-      "tx_pin": "PA0",
-      "rx_pin": "PA1"
-    },
-    {
-      "index": 5,
-      "tx_pin": "PC12",
-      "rx_pin": ""
-    },
-    {
-      "index": 6,
-      "tx_pin": "PC6",
-      "rx_pin": "PC7"
+      "rx_pin": "PA3"
     }
   ],
   "spi_ports": [
@@ -54,59 +34,55 @@
       "mosi_pin": "PB5"
     }
   ],
-  "beeper_pins": [
-    {
-      "index": 1,
-      "pin": "PB0"
-    }
-  ],
+  "beeper_pins": [],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC9"
+      "pin": "PA0"
     },
     {
       "index": 2,
-      "pin": "PB7"
+      "pin": "PA1"
     },
     {
       "index": 3,
-      "pin": "PC8"
+      "pin": "PB6"
     },
     {
       "index": 4,
-      "pin": "PB6"
+      "pin": "PB7"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PC13"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PB0",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 163
+    "pin": "PB1",
+    "scale": 400
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PA4",
-      "port": 2,
-      "cs_pin": "PB12"
+      "exti_pin": "PB10",
+      "port": 1,
+      "cs_pin": "PA4"
     }
   ],
   "osd": {
-    "port": 3,
-    "cs_pin": "PD2"
+    "port": 2,
+    "cs_pin": "PB12"
   },
-  "data_flash": {
-    "port": 1,
-    "cs_pin": "PA3"
+  "rx": {
+    "exti_pin": "PC14",
+    "port": 3,
+    "cs_pin": "PA15"
   }
 }

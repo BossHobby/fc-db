@@ -1,6 +1,6 @@
 {
-  "mcu": "STM32F7X2",
-  "board": "TMPACERF7",
+  "mcu": "STM32H743",
+  "board": "TMH7",
   "manufacturer": "TMTR",
   "uart_ports": [
     {
@@ -10,18 +10,18 @@
     },
     {
       "index": 2,
-      "tx_pin": "PA2",
-      "rx_pin": "PA3"
+      "tx_pin": "PD5",
+      "rx_pin": "PD6"
     },
     {
       "index": 3,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
+      "tx_pin": "PD8",
+      "rx_pin": "PD9"
     },
     {
       "index": 4,
-      "tx_pin": "PA0",
-      "rx_pin": "PA1"
+      "tx_pin": "PD1",
+      "rx_pin": "PD0"
     },
     {
       "index": 5,
@@ -32,6 +32,16 @@
       "index": 6,
       "tx_pin": "PC6",
       "rx_pin": "PC7"
+    },
+    {
+      "index": 7,
+      "tx_pin": "PE8",
+      "rx_pin": "PE7"
+    },
+    {
+      "index": 8,
+      "tx_pin": "PE1",
+      "rx_pin": "PE0"
     }
   ],
   "spi_ports": [
@@ -49,72 +59,96 @@
     },
     {
       "index": 3,
-      "sclk_pin": "PB3",
-      "miso_pin": "PB4",
-      "mosi_pin": "PB5"
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PB2"
+    },
+    {
+      "index": 4,
+      "sclk_pin": "PE12",
+      "miso_pin": "PE13",
+      "mosi_pin": "PE14"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PE3"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC9"
+      "pin": "PA0"
     },
     {
       "index": 2,
-      "pin": "PC8"
+      "pin": "PA1"
     },
     {
       "index": 3,
-      "pin": "PB0"
+      "pin": "PA2"
     },
     {
       "index": 4,
-      "pin": "PB1"
+      "pin": "PA3"
     },
     {
       "index": 5,
-      "pin": "PB7"
+      "pin": "PB0"
     },
     {
       "index": 6,
-      "pin": "PB6"
+      "pin": "PB1"
+    },
+    {
+      "index": 7,
+      "pin": "PC8"
+    },
+    {
+      "index": 8,
+      "pin": "PC9"
     }
   ],
   "led_pins": [
     {
-      "index": 1,
-      "pin": "PC15"
+      "index": 2,
+      "pin": "PE5"
+    },
+    {
+      "index": 3,
+      "pin": "PE4"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PC1",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 179
+    "pin": "PC3",
+    "scale": 200
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PA4",
+      "exti_pin": "PC4",
       "port": 1,
-      "cs_pin": "PC4"
+      "cs_pin": "PA4"
+    },
+    {
+      "index": 2,
+      "exti_pin": "PE15",
+      "port": 0,
+      "cs_pin": "PE11"
     }
   ],
   "osd": {
-    "port": 3,
-    "cs_pin": "PC13"
-  },
-  "data_flash": {
     "port": 2,
     "cs_pin": "PB12"
+  },
+  "data_flash": {
+    "port": 3,
+    "cs_pin": "PA15"
   }
 }

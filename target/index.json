@@ -571,6 +571,11 @@
   },
   {
     "mcu": "STM32F745",
+    "board": "FOXEERF745V3_AIO",
+    "manufacturer": "FOXE"
+  },
+  {
+    "mcu": "STM32F745",
     "board": "FOXEERF745_AIO",
     "manufacturer": "FOXE"
   },
@@ -722,6 +727,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "HAKRCF722MINI",
+    "manufacturer": "HARC"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "KD722",
     "manufacturer": "HARC"
   },
   {
@@ -897,6 +907,11 @@
   {
     "mcu": "STM32F411",
     "board": "IFLIGHT_F411_PRO",
+    "manufacturer": "IFRC"
+  },
+  {
+    "mcu": "STM32F411SX1280",
+    "board": "IFLIGHT_F4SX1280",
     "manufacturer": "IFRC"
   },
   {
@@ -1185,8 +1200,18 @@
     "manufacturer": "NERC"
   },
   {
+    "mcu": "STM32F411",
+    "board": "NEUTRONRCF411AIO",
+    "manufacturer": "NERC"
+  },
+  {
     "mcu": "STM32F411SX1280",
     "board": "NEUTRONRCF411SX1280",
+    "manufacturer": "NERC"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "NEUTRONRCF722AIO",
     "manufacturer": "NERC"
   },
   {
@@ -1197,6 +1222,11 @@
   {
     "mcu": "STM32G47X",
     "board": "NEUTRONRCG4AIO",
+    "manufacturer": "NERC"
+  },
+  {
+    "mcu": "STM32H743",
+    "board": "NEUTRONRCH743AIO",
     "manufacturer": "NERC"
   },
   {
@@ -1350,6 +1380,11 @@
     "manufacturer": "SPBE"
   },
   {
+    "mcu": "STM32F405",
+    "board": "SPEEDYBEEF405V3",
+    "manufacturer": "SPBE"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "SPEEDYBEEF7",
     "manufacturer": "SPBE"
@@ -1443,6 +1478,11 @@
     "mcu": "STM32F411",
     "board": "PODRACERAIO",
     "manufacturer": "TEBS"
+  },
+  {
+    "mcu": "STM32H743",
+    "board": "TMH7",
+    "manufacturer": "TMTR"
   },
   {
     "mcu": "STM32F405",

@@ -1,7 +1,7 @@
 {
-  "mcu": "STM32F7X2",
-  "board": "LUXAIO",
-  "manufacturer": "LMNR",
+  "mcu": "STM32F405",
+  "board": "SPEEDYBEEF405V3",
+  "manufacturer": "SPBE",
   "uart_ports": [
     {
       "index": 1,
@@ -11,7 +11,7 @@
     {
       "index": 2,
       "tx_pin": "PA2",
-      "rx_pin": ""
+      "rx_pin": "PA3"
     },
     {
       "index": 3,
@@ -26,7 +26,7 @@
     {
       "index": 5,
       "tx_pin": "PC12",
-      "rx_pin": ""
+      "rx_pin": "PD2"
     },
     {
       "index": 6,
@@ -46,24 +46,18 @@
       "sclk_pin": "PB13",
       "miso_pin": "PB14",
       "mosi_pin": "PB15"
-    },
-    {
-      "index": 3,
-      "sclk_pin": "PB3",
-      "miso_pin": "PB4",
-      "mosi_pin": "PB5"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PB0"
+      "pin": "PC5"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC9"
+      "pin": "PB6"
     },
     {
       "index": 2,
@@ -71,17 +65,33 @@
     },
     {
       "index": 3,
-      "pin": "PC8"
+      "pin": "PB8"
     },
     {
       "index": 4,
-      "pin": "PB6"
+      "pin": "PB9"
+    },
+    {
+      "index": 5,
+      "pin": "PB0"
+    },
+    {
+      "index": 6,
+      "pin": "PB1"
+    },
+    {
+      "index": 7,
+      "pin": "PB5"
+    },
+    {
+      "index": 8,
+      "pin": "PB4"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PC8"
     }
   ],
   "inverter_pins": [],
@@ -91,22 +101,22 @@
   },
   "current_pin": {
     "pin": "PC1",
-    "scale": 163
+    "scale": 386
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PA4",
-      "port": 2,
-      "cs_pin": "PB12"
+      "exti_pin": "PC4",
+      "port": 1,
+      "cs_pin": "PA4"
     }
   ],
   "osd": {
-    "port": 3,
-    "cs_pin": "PD2"
+    "port": 2,
+    "cs_pin": "PB12"
   },
-  "data_flash": {
-    "port": 1,
-    "cs_pin": "PA3"
+  "sd_card": {
+    "port": 2,
+    "cs_pin": "PA15"
   }
 }

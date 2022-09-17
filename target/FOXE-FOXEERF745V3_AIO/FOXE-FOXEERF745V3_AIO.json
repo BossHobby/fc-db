@@ -1,7 +1,7 @@
 {
-  "mcu": "STM32F7X2",
-  "board": "LUXAIO",
-  "manufacturer": "LMNR",
+  "mcu": "STM32F745",
+  "board": "FOXEERF745V3_AIO",
+  "manufacturer": "FOXE",
   "uart_ports": [
     {
       "index": 1,
@@ -11,12 +11,12 @@
     {
       "index": 2,
       "tx_pin": "PA2",
-      "rx_pin": ""
+      "rx_pin": "PA3"
     },
     {
       "index": 3,
-      "tx_pin": "PC10",
-      "rx_pin": "PC11"
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
     },
     {
       "index": 4,
@@ -24,14 +24,9 @@
       "rx_pin": "PA1"
     },
     {
-      "index": 5,
-      "tx_pin": "PC12",
-      "rx_pin": ""
-    },
-    {
-      "index": 6,
-      "tx_pin": "PC6",
-      "rx_pin": "PC7"
+      "index": 7,
+      "tx_pin": "PE8",
+      "rx_pin": "PE7"
     }
   ],
   "spi_ports": [
@@ -49,64 +44,70 @@
     },
     {
       "index": 3,
-      "sclk_pin": "PB3",
-      "miso_pin": "PB4",
-      "mosi_pin": "PB5"
+      "sclk_pin": "PC10",
+      "miso_pin": "PC11",
+      "mosi_pin": "PC12"
+    },
+    {
+      "index": 4,
+      "sclk_pin": "PE2",
+      "miso_pin": "PE5",
+      "mosi_pin": "PE6"
     }
   ],
   "beeper_pins": [
     {
       "index": 1,
-      "pin": "PB0"
+      "pin": "PD2"
     }
   ],
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PC9"
+      "pin": "PB4"
     },
     {
       "index": 2,
-      "pin": "PB7"
+      "pin": "PB5"
     },
     {
       "index": 3,
-      "pin": "PC8"
+      "pin": "PB1"
     },
     {
       "index": 4,
-      "pin": "PB6"
+      "pin": "PB0"
     }
   ],
   "led_pins": [
     {
       "index": 1,
-      "pin": "PC14"
+      "pin": "PC13"
     }
   ],
   "inverter_pins": [],
   "battery_pin": {
-    "pin": "PC0",
+    "pin": "PC3",
     "scale": 0
   },
   "current_pin": {
-    "pin": "PC1",
-    "scale": 163
+    "pin": "PC2",
+    "scale": 100
   },
   "gyros": [
     {
       "index": 1,
-      "exti_pin": "PA4",
-      "port": 2,
-      "cs_pin": "PB12"
+      "exti_pin": "PD0",
+      "port": 3,
+      "cs_pin": "PA15"
     }
   ],
   "osd": {
-    "port": 3,
-    "cs_pin": "PD2"
+    "port": 1,
+    "cs_pin": "PA4"
   },
   "data_flash": {
-    "port": 1,
-    "cs_pin": "PA3"
+    "port": 4,
+    "cs_pin": "PE4"
   }
 }
