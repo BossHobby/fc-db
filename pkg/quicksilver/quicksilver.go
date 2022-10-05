@@ -44,8 +44,8 @@ const headerTemplate = `
 #define GYRO_INT {{ (index .Gyros 0).EXTI | pinEnum }}
 #define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
 
-//RADIO
 {{ if .CC2500 -}}
+//RADIO
 #ifdef RX_FRSKY
 #define USE_CC2500
 #define CC2500_SPI_PORT SPI_PORT{{ .CC2500.Port }}
@@ -56,10 +56,6 @@ const headerTemplate = `
 {{ if .CC2500.ANTSelPin -}}#define CC2500_ANT_SEL_PIN {{ .CC2500.ANTSelPin | pinEnum }}{{- end }}
 #endif
 {{- end }}
-
-#ifdef SERIAL_RX
-#define RX_USART USART_PORT2
-#endif
 
 {{ if .OSD -}}
 // OSD
