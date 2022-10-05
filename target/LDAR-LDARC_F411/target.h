@@ -29,12 +29,7 @@
 #define GYRO_INT PIN_A1
 #define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
 
-//RADIO
 
-
-#ifdef SERIAL_RX
-#define RX_USART USART_PORT2
-#endif
 
 // OSD
 #define USE_MAX7456
