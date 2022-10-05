@@ -6,7 +6,7 @@
     {
       "index": 1,
       "tx_pin": "PA9",
-      "rx_pin": "PA10"
+      "rx_pin": ""
     },
     {
       "index": 2,

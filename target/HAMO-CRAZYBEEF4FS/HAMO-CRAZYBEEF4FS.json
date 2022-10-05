@@ -85,9 +85,12 @@
     "port": 2,
     "cs_pin": "PB12"
   },
-  "rx": {
-    "exti_pin": "PA14",
+  "cc2500": {
     "port": 3,
-    "cs_pin": "PA15"
+    "cs_pin": "PA15",
+    "exti_pin": "PA14",
+    "tx_en_pin": null,
+    "lna_en_pin": null,
+    "ant_sel_pin": null
   }
 }

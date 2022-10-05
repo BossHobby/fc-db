@@ -118,9 +118,12 @@
     "port": 2,
     "cs_pin": "PB10"
   },
-  "rx": {
-    "exti_pin": "PB15",
+  "cc2500": {
     "port": 3,
-    "cs_pin": "PA15"
+    "cs_pin": "PA15",
+    "exti_pin": "PB15",
+    "tx_en_pin": "PB6",
+    "lna_en_pin": "PB7",
+    "ant_sel_pin": "PB8"
   }
 }

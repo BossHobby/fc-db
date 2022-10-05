@@ -114,9 +114,12 @@
     "port": 0,
     "cs_pin": ""
   },
-  "rx": {
-    "exti_pin": "",
+  "cc2500": {
     "port": 0,
-    "cs_pin": ""
+    "cs_pin": "",
+    "exti_pin": "",
+    "tx_en_pin": null,
+    "lna_en_pin": null,
+    "ant_sel_pin": null
   }
 }

@@ -102,9 +102,12 @@
     "port": 3,
     "cs_pin": "PB3"
   },
-  "rx": {
-    "exti_pin": "PA0",
+  "cc2500": {
     "port": 3,
-    "cs_pin": "PD2"
+    "cs_pin": "PD2",
+    "exti_pin": "PA0",
+    "tx_en_pin": null,
+    "lna_en_pin": null,
+    "ant_sel_pin": null
   }
 }

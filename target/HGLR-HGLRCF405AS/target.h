@@ -33,9 +33,9 @@
 #define CC2500_SPI_PORT SPI_PORT3
 #define CC2500_NSS PIN_D2
 #define CC2500_GDO0_PIN PIN_A0
-// #define CC2500_TX_EN_PIN
-// #define CC2500_LNA_EN_PIN
-// #define CC2500_ANT_SEL_PIN
+
+
+
 #endif
 
 #ifdef SERIAL_RX
