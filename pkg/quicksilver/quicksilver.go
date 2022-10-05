@@ -45,15 +45,15 @@ const headerTemplate = `
 #define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
 
 //RADIO
-{{ if .RX -}}
+{{ if .CC2500 -}}
 #ifdef RX_FRSKY
 #define USE_CC2500
-#define CC2500_SPI_PORT SPI_PORT{{ .RX.Port }}
-#define CC2500_NSS {{ .RX.CSPin | pinEnum }}
-#define CC2500_GDO0_PIN {{ .RX.EXTI | pinEnum }}
-// #define CC2500_TX_EN_PIN
-// #define CC2500_LNA_EN_PIN
-// #define CC2500_ANT_SEL_PIN
+#define CC2500_SPI_PORT SPI_PORT{{ .CC2500.Port }}
+#define CC2500_NSS {{ .CC2500.CSPin | pinEnum }}
+#define CC2500_GDO0_PIN {{ .CC2500.EXTI | pinEnum }}
+{{ if .CC2500.TXEnPin -}}#define CC2500_TX_EN_PIN {{ .CC2500.TXEnPin | pinEnum }}{{- end }}
+{{ if .CC2500.LNAEnPin -}}#define CC2500_LNA_EN_PIN {{ .CC2500.LNAEnPin | pinEnum }}{{- end }}
+{{ if .CC2500.ANTSelPin -}}#define CC2500_ANT_SEL_PIN {{ .CC2500.ANTSelPin | pinEnum }}{{- end }}
 #endif
 {{- end }}
 

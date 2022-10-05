@@ -75,9 +75,12 @@ type SPIDevice struct {
 	CSPin Pin `json:"cs_pin"`
 }
 
-type RadioDevice struct {
-	EXTI Pin `json:"exti_pin"`
+type CC2500 struct {
 	SPIDevice
+	EXTI      Pin  `json:"exti_pin"`
+	TXEnPin   *Pin `json:"tx_en_pin"`
+	LNAEnPin  *Pin `json:"lna_en_pin"`
+	ANTSelPin *Pin `json:"ant_sel_pin"`
 }
 
 type GyroDevice struct {
@@ -106,7 +109,7 @@ type Target struct {
 	OSD       *SPIDevice   `json:"osd,omitempty"`
 	DataFlash *SPIDevice   `json:"data_flash,omitempty"`
 	SDCard    *SPIDevice   `json:"sd_card,omitempty"`
-	RX        *RadioDevice `json:"rx,omitempty"`
+	CC2500    *CC2500      `json:"cc2500,omitempty"`
 }
 
 func NewTarget() *Target {

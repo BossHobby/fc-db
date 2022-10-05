@@ -123,16 +123,34 @@ func mapResource(t *fc.Target, resource string, index int, pin fc.Pin) {
 		ensureSpi(&t.SDCard).CSPin = pin
 
 	case "RX_SPI_CS":
-		if t.RX == nil {
-			t.RX = &fc.RadioDevice{}
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
 		}
-		t.RX.CSPin = pin
+		t.CC2500.CSPin = pin
 
 	case "RX_SPI_EXTI":
-		if t.RX == nil {
-			t.RX = &fc.RadioDevice{}
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
 		}
-		t.RX.EXTI = pin
+		t.CC2500.EXTI = pin
+
+	case "RX_SPI_CC2500_TX_EN":
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
+		}
+		t.CC2500.TXEnPin = &pin
+
+	case "RX_SPI_CC2500_LNA_EN":
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
+		}
+		t.CC2500.LNAEnPin = &pin
+
+	case "RX_SPI_CC2500_ANT_SEL":
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
+		}
+		t.CC2500.ANTSelPin = &pin
 	}
 }
 
@@ -154,10 +172,10 @@ func mapSet(t *fc.Target, key, value string) {
 		ensureSpi(&t.OSD).Port = util.MustParseInt(value)
 
 	case "rx_spi_bus":
-		if t.RX == nil {
-			t.RX = &fc.RadioDevice{}
+		if t.CC2500 == nil {
+			t.CC2500 = &fc.CC2500{}
 		}
-		t.RX.Port = util.MustParseInt(value)
+		t.CC2500.Port = util.MustParseInt(value)
 
 	case "ibata_scale":
 		if t.CurrentPin == nil {
