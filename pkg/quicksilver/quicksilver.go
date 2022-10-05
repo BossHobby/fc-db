@@ -48,7 +48,7 @@ const headerTemplate = `
 //RADIO
 #define USE_CC2500
 #define CC2500_SPI_PORT SPI_PORT{{ .CC2500.Port }}
-#define CC2500_NSS {{ .CC2500.CSPin | pinEnum }}
+#define CC2500_NSS_PIN {{ .CC2500.CSPin | pinEnum }}
 #define CC2500_GDO0_PIN {{ .CC2500.EXTI | pinEnum }}
 {{ if .CC2500.TXEnPin -}}#define CC2500_TX_EN_PIN {{ .CC2500.TXEnPin | pinEnum }}{{- end }}
 {{ if .CC2500.LNAEnPin -}}#define CC2500_LNA_EN_PIN {{ .CC2500.LNAEnPin | pinEnum }}{{- end }}
