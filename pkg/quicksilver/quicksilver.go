@@ -46,7 +46,6 @@ const headerTemplate = `
 
 {{ if .CC2500 -}}
 //RADIO
-#ifdef RX_FRSKY
 #define USE_CC2500
 #define CC2500_SPI_PORT SPI_PORT{{ .CC2500.Port }}
 #define CC2500_NSS {{ .CC2500.CSPin | pinEnum }}
@@ -54,7 +53,6 @@ const headerTemplate = `
 {{ if .CC2500.TXEnPin -}}#define CC2500_TX_EN_PIN {{ .CC2500.TXEnPin | pinEnum }}{{- end }}
 {{ if .CC2500.LNAEnPin -}}#define CC2500_LNA_EN_PIN {{ .CC2500.LNAEnPin | pinEnum }}{{- end }}
 {{ if .CC2500.ANTSelPin -}}#define CC2500_ANT_SEL_PIN {{ .CC2500.ANTSelPin | pinEnum }}{{- end }}
-#endif
 {{- end }}
 
 {{ if .OSD -}}

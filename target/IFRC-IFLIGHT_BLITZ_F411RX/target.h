@@ -28,7 +28,6 @@
 #define GYRO_ORIENTATION GYRO_ROTATE_90_CCW
 
 //RADIO
-#ifdef RX_FRSKY
 #define USE_CC2500
 #define CC2500_SPI_PORT SPI_PORT3
 #define CC2500_NSS PIN_A15
@@ -36,7 +35,6 @@
 #define CC2500_TX_EN_PIN PIN_A8
 
 
-#endif
 
 // OSD
 #define USE_MAX7456
