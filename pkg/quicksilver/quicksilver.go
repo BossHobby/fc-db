@@ -14,8 +14,6 @@ const headerTemplate = `
 #include "config.h"
 #include "config_helper.h"
 
-#define {{ .Board }}
-
 //PORTS
 #define SPI_PORTS \
 {{- range $i, $v := .SPIPorts }}
