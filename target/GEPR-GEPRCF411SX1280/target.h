@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define GEPRCF411SX1280
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \

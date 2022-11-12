@@ -215,6 +215,11 @@
     "manufacturer": "CYCL"
   },
   {
+    "mcu": "STM32F411",
+    "board": "DARWINF411",
+    "manufacturer": "DAFP"
+  },
+  {
     "mcu": "STM32F411SX1280",
     "board": "DARWINF4SX1280HD",
     "manufacturer": "DAFP"
@@ -600,7 +605,7 @@
     "manufacturer": "FRSK"
   },
   {
-    "mcu": "",
+    "mcu": "STM32F411",
     "board": "GEELANGF411",
     "manufacturer": "GEEL"
   },
@@ -885,6 +890,11 @@
     "manufacturer": "IFRC"
   },
   {
+    "mcu": "STM32F745",
+    "board": "IFLIGHT_BLITZ_F7_AIO",
+    "manufacturer": "IFRC"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "IFLIGHT_BLITZ_F7_PRO",
     "manufacturer": "IFRC"
@@ -910,7 +920,7 @@
     "manufacturer": "IFRC"
   },
   {
-    "mcu": "STM32F411SX1280",
+    "mcu": "STM32F411",
     "board": "IFLIGHT_F4SX1280",
     "manufacturer": "IFRC"
   },
@@ -1160,6 +1170,11 @@
     "manufacturer": "NEBD"
   },
   {
+    "mcu": "STM32H743",
+    "board": "NBD_GALAXYAIO255",
+    "manufacturer": "NEBD"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "NBD_INFINITYAIO",
     "manufacturer": "NEBD"
@@ -1306,7 +1321,12 @@
   },
   {
     "mcu": "STM32F405",
-    "board": "AOCODAF405V2",
+    "board": "AOCODAF405V2MPU6000",
+    "manufacturer": "SJET"
+  },
+  {
+    "mcu": "STM32F405",
+    "board": "AOCODAF405V2MPU6500",
     "manufacturer": "SJET"
   },
   {
@@ -1317,6 +1337,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "AOCODAF722MINI",
+    "manufacturer": "SJET"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "AOCODARCF411_AIO",
     "manufacturer": "SJET"
   },
   {
@@ -1495,6 +1520,11 @@
     "manufacturer": "TMTR"
   },
   {
+    "mcu": "STM32F411SX1280",
+    "board": "TMOTORF4SX1280",
+    "manufacturer": "TMTR"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "TMOTORF7",
     "manufacturer": "TMTR"
@@ -1507,6 +1537,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "TMOTORF7V2",
+    "manufacturer": "TMTR"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "TMOTORF7_AIO",
     "manufacturer": "TMTR"
   },
   {

@@ -30,7 +30,7 @@
     },
     {
       "index": 7,
-      "tx_pin": "",
+      "tx_pin": "PE8",
       "rx_pin": "PE7"
     }
   ],

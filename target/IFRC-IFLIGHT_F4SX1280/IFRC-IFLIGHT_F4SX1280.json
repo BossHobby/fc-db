@@ -1,5 +1,5 @@
 {
-  "mcu": "STM32F411SX1280",
+  "mcu": "STM32F411",
   "board": "IFLIGHT_F4SX1280",
   "manufacturer": "IFRC",
   "uart_ports": [

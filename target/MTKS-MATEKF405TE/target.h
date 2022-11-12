@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define MATEKF405TE
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PB4PA7 \

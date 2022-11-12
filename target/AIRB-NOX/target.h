@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define NOX
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PB3PB4PB5 \

@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define MAMBAF722_I2C
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \

@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define JHEF745
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \
@@ -16,7 +14,7 @@
 	USART3_PB11PB10 \
 	USART4_PA1PA0 \
 	USART6_PC7PC6 \
-	USART7_PE7
+	USART7_PE7PE8
 
 //LEDS
 #define LED_NUMBER 1

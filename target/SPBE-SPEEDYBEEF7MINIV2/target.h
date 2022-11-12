@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define SPEEDYBEEF7MINIV2
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \

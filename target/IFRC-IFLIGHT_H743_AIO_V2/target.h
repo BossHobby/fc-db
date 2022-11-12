@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define IFLIGHT_H743_AIO_V2
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \

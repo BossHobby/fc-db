@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define OMNIBUSF4V6
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7 \

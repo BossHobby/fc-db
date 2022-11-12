@@ -1,5 +1,5 @@
 {
-  "mcu": "",
+  "mcu": "STM32F411",
   "board": "GEELANGF411",
   "manufacturer": "GEEL",
   "uart_ports": [

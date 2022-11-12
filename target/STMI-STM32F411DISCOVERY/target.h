@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define STM32F411DISCOVERY
-
 //PORTS
 #define SPI_PORTS \
   SPI1_PA5PA6PA7

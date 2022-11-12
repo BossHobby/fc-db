@@ -2,8 +2,6 @@
 #include "config.h"
 #include "config_helper.h"
 
-#define ELLE0
-
 //PORTS
 #define SPI_PORTS \
   SPI2_PB13PB14PB15
