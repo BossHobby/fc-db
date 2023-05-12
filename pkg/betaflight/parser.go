@@ -206,6 +206,8 @@ func ParseConfig(path string) (*fc.Target, error) {
 			continue
 		}
 
+		line = strings.SplitN(line, "#", 2)[0]
+
 		parts := strings.Fields(line)
 		if len(parts) == 0 {
 			continue
