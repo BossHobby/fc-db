@@ -1,0 +1,104 @@
+{
+  "mcu": "STM32F411",
+  "board": "GEMEF411",
+  "manufacturer": "GFPV",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA15",
+      "rx_pin": "PB3"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    },
+    {
+      "index": 11,
+      "tx_pin": "PB10",
+      "rx_pin": "PB10"
+    },
+    {
+      "index": 12,
+      "tx_pin": "PB6",
+      "rx_pin": "PB6"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC14"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PA8"
+    },
+    {
+      "index": 2,
+      "pin": "PB4"
+    },
+    {
+      "index": 3,
+      "pin": "PB0"
+    },
+    {
+      "index": 4,
+      "pin": "PB5"
+    },
+    {
+      "index": 5,
+      "pin": "PA9"
+    },
+    {
+      "index": 6,
+      "pin": "PA10"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": {
+    "pin": "PA1",
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PB1",
+    "scale": 800
+  },
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "PC15",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PB12"
+  },
+  "data_flash": {
+    "port": 2,
+    "cs_pin": "PB2"
+  }
+}

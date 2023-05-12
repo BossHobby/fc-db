@@ -1,0 +1,96 @@
+{
+  "mcu": "STM32F411SX1280",
+  "board": "EMAX_TINYHAWKF4SX1280",
+  "manufacturer": "EMAX",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PA2",
+      "rx_pin": "PA3"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PC15"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PB10"
+    },
+    {
+      "index": 2,
+      "pin": "PB6"
+    },
+    {
+      "index": 3,
+      "pin": "PB7"
+    },
+    {
+      "index": 4,
+      "pin": "PB8"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PC13"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": {
+    "pin": "PB0",
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PB1",
+    "scale": 179
+  },
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "PA1",
+      "port": 1,
+      "cs_pin": "PA4"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PB12"
+  },
+  "cc2500": {
+    "port": 3,
+    "cs_pin": "PA15",
+    "exti_pin": "PC14",
+    "tx_en_pin": null,
+    "lna_en_pin": null,
+    "ant_sel_pin": null
+  }
+}

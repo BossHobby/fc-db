@@ -16,6 +16,11 @@
   },
   {
     "mcu": "STM32F7X2",
+    "board": "ALIENFLIGHTNGF7_ELRS",
+    "manufacturer": "AFNG"
+  },
+  {
+    "mcu": "STM32F7X2",
     "board": "ALIENFLIGHTNGF7_RX",
     "manufacturer": "AFNG"
   },
@@ -130,6 +135,11 @@
     "manufacturer": "ALWH"
   },
   {
+    "mcu": "STM32G47X",
+    "board": "MERCURYG4",
+    "manufacturer": "ANYL"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "APEXF7",
     "manufacturer": "APEX"
@@ -137,6 +147,11 @@
   {
     "mcu": "STM32F7X2",
     "board": "AXISFLYINGF7",
+    "manufacturer": "AXFL"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "AXISFLYINGF7PRO",
     "manufacturer": "AXFL"
   },
   {
@@ -178,6 +193,11 @@
     "mcu": "STM32F7X2",
     "board": "NERO",
     "manufacturer": "BKMN"
+  },
+  {
+    "mcu": "STM32F405",
+    "board": "MATEKF405STD_CLONE",
+    "manufacturer": "CLNE"
   },
   {
     "mcu": "STM32F405",
@@ -228,6 +248,21 @@
     "mcu": "STM32F7X2",
     "board": "DARWINF722HD",
     "manufacturer": "DAFP"
+  },
+  {
+    "mcu": "STM32F405",
+    "board": "DAKEFPVF405",
+    "manufacturer": "DAKE"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "DAKEFPVF411",
+    "manufacturer": "DAKE"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "DAKEFPVF722",
+    "manufacturer": "DAKE"
   },
   {
     "mcu": "STM32F405",
@@ -310,8 +345,18 @@
     "manufacturer": "DIAT"
   },
   {
+    "mcu": "STM32G47X",
+    "board": "MAMBAG4",
+    "manufacturer": "DIAT"
+  },
+  {
     "mcu": "STM32H743",
     "board": "MAMBAH743",
+    "manufacturer": "DIAT"
+  },
+  {
+    "mcu": "STM32H743",
+    "board": "MAMBAH743_2022B",
     "manufacturer": "DIAT"
   },
   {
@@ -351,12 +396,17 @@
   },
   {
     "mcu": "STM32F411",
-    "board": "BABYHAWK_II_HD",
+    "board": "EMAX_BABYHAWK_II_HD",
+    "manufacturer": "EMAX"
+  },
+  {
+    "mcu": "STM32F411SX1280",
+    "board": "EMAX_TINYHAWKF4SX1280",
     "manufacturer": "EMAX"
   },
   {
     "mcu": "STM32F411",
-    "board": "TINYHAWKF411",
+    "board": "EMAX_TINYHAWK_F411RX",
     "manufacturer": "EMAX"
   },
   {
@@ -581,7 +631,17 @@
   },
   {
     "mcu": "STM32F745",
+    "board": "FOXEERF745V4_AIO",
+    "manufacturer": "FOXE"
+  },
+  {
+    "mcu": "STM32F745",
     "board": "FOXEERF745_AIO",
+    "manufacturer": "FOXE"
+  },
+  {
+    "mcu": "STM32H743",
+    "board": "FOXEERH743",
     "manufacturer": "FOXE"
   },
   {
@@ -660,6 +720,11 @@
     "manufacturer": "GEPR"
   },
   {
+    "mcu": "STM32G47X",
+    "board": "GEPRCG4AIO",
+    "manufacturer": "GEPR"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "GEPRC_F722_AIO",
     "manufacturer": "GEPR"
@@ -668,6 +733,11 @@
     "mcu": "STM32F405",
     "board": "GEP_F405_VTX_V3",
     "manufacturer": "GEPR"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "GEMEF411",
+    "manufacturer": "GFPV"
   },
   {
     "mcu": "STM32F7X2",
@@ -710,6 +780,11 @@
     "manufacturer": "HARC"
   },
   {
+    "mcu": "STM32F405",
+    "board": "HAKRCF405V2",
+    "manufacturer": "HARC"
+  },
+  {
     "mcu": "STM32F411",
     "board": "HAKRCF411",
     "manufacturer": "HARC"
@@ -732,6 +807,16 @@
   {
     "mcu": "STM32F7X2",
     "board": "HAKRCF722MINI",
+    "manufacturer": "HARC"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "HAKRCF722V2",
+    "manufacturer": "HARC"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "HAKRCF7230D",
     "manufacturer": "HARC"
   },
   {
@@ -830,6 +915,16 @@
     "manufacturer": "HGLR"
   },
   {
+    "mcu": "STM32F411SX1280",
+    "board": "HGLRCF411SX1280",
+    "manufacturer": "HGLR"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "HGLRCF411SX1280_15A",
+    "manufacturer": "HGLR"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "HGLRCF722",
     "manufacturer": "HGLR"
@@ -890,6 +985,11 @@
     "manufacturer": "IFRC"
   },
   {
+    "mcu": "STM32F7X2",
+    "board": "IFLIGHT_BLITZ_F722_X1",
+    "manufacturer": "IFRC"
+  },
+  {
     "mcu": "STM32F745",
     "board": "IFLIGHT_BLITZ_F7_AIO",
     "manufacturer": "IFRC"
@@ -920,7 +1020,7 @@
     "manufacturer": "IFRC"
   },
   {
-    "mcu": "STM32F411",
+    "mcu": "STM32F411SX1280",
     "board": "IFLIGHT_F4SX1280",
     "manufacturer": "IFRC"
   },
@@ -1120,6 +1220,11 @@
     "manufacturer": "MTKS"
   },
   {
+    "mcu": "STM32F405",
+    "board": "MATEKF405TE_SD",
+    "manufacturer": "MTKS"
+  },
+  {
     "mcu": "STM32F411",
     "board": "MATEKF411",
     "manufacturer": "MTKS"
@@ -1172,6 +1277,11 @@
   {
     "mcu": "STM32H743",
     "board": "NBD_GALAXYAIO255",
+    "manufacturer": "NEBD"
+  },
+  {
+    "mcu": "STM32F745",
+    "board": "NBD_INFINITY200RS",
     "manufacturer": "NEBD"
   },
   {
@@ -1315,6 +1425,11 @@
     "manufacturer": "RUSH"
   },
   {
+    "mcu": "STM32F7X2",
+    "board": "RUSHF7AIO",
+    "manufacturer": "RUSH"
+  },
+  {
     "mcu": "STM32F405",
     "board": "AOCODAF405",
     "manufacturer": "SJET"
@@ -1346,6 +1461,11 @@
   },
   {
     "mcu": "STM32F7X2",
+    "board": "AOCODARCF722_AIO",
+    "manufacturer": "SJET"
+  },
+  {
+    "mcu": "STM32F7X2",
     "board": "AOCODARCF7DUAL",
     "manufacturer": "SJET"
   },
@@ -1357,6 +1477,11 @@
   {
     "mcu": "STM32F405",
     "board": "SKYSTARSF405",
+    "manufacturer": "SKST"
+  },
+  {
+    "mcu": "STM32F405",
+    "board": "SKYSTARSF405AIO",
     "manufacturer": "SKST"
   },
   {
@@ -1465,6 +1590,21 @@
     "manufacturer": "SPRO"
   },
   {
+    "mcu": "STM32H750",
+    "board": "SPRACINGH7EXTREME",
+    "manufacturer": "SPRO"
+  },
+  {
+    "mcu": "STM32H750",
+    "board": "SPRACINGH7NANO",
+    "manufacturer": "SPRO"
+  },
+  {
+    "mcu": "STM32H730",
+    "board": "SPRACINGH7RF",
+    "manufacturer": "SPRO"
+  },
+  {
     "mcu": "STM32F7X2",
     "board": "NUCLEOF722",
     "manufacturer": "STMI"
@@ -1478,6 +1618,11 @@
     "mcu": "STM32F405",
     "board": "STM32F4DISCOVERY",
     "manufacturer": "STMI"
+  },
+  {
+    "mcu": "STM32F411",
+    "board": "SUB250F411",
+    "manufacturer": "SU25"
   },
   {
     "mcu": "STM32F405",
@@ -1542,6 +1687,16 @@
   {
     "mcu": "STM32F7X2",
     "board": "TMOTORF7_AIO",
+    "manufacturer": "TMTR"
+  },
+  {
+    "mcu": "STM32H743",
+    "board": "TMOTORH743",
+    "manufacturer": "TMTR"
+  },
+  {
+    "mcu": "STM32F7X2",
+    "board": "TMOTORVELOXF7V2",
     "manufacturer": "TMTR"
   },
   {

@@ -68,15 +68,15 @@
   "motor_pins": [
     {
       "index": 1,
-      "pin": "PB0"
-    },
-    {
-      "index": 2,
       "pin": "PB1"
     },
     {
+      "index": 2,
+      "pin": "PC9"
+    },
+    {
       "index": 3,
-      "pin": "PE9"
+      "pin": "PB0"
     },
     {
       "index": 4,
@@ -84,7 +84,7 @@
     },
     {
       "index": 5,
-      "pin": "PC9"
+      "pin": "PE9"
     },
     {
       "index": 6,

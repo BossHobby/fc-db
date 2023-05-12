@@ -90,7 +90,7 @@
     "cs_pin": "PA8"
   },
   "cc2500": {
-    "port": 0,
+    "port": 3,
     "cs_pin": "PA15",
     "exti_pin": "PC13",
     "tx_en_pin": null,

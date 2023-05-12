@@ -27,6 +27,11 @@
       "index": 5,
       "tx_pin": "PC12",
       "rx_pin": "PD2"
+    },
+    {
+      "index": 6,
+      "tx_pin": "PC6",
+      "rx_pin": "PC7"
     }
   ],
   "spi_ports": [

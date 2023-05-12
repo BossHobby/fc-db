@@ -1,0 +1,107 @@
+{
+  "mcu": "STM32G47X",
+  "board": "GEPRCG4AIO",
+  "manufacturer": "GEPR",
+  "uart_ports": [
+    {
+      "index": 1,
+      "tx_pin": "PA9",
+      "rx_pin": "PA10"
+    },
+    {
+      "index": 2,
+      "tx_pin": "PB3",
+      "rx_pin": "PB4"
+    },
+    {
+      "index": 3,
+      "tx_pin": "PB9",
+      "rx_pin": ""
+    },
+    {
+      "index": 4,
+      "tx_pin": "PC10",
+      "rx_pin": "PC11"
+    },
+    {
+      "index": 11,
+      "tx_pin": "PB10",
+      "rx_pin": "PB11"
+    }
+  ],
+  "spi_ports": [
+    {
+      "index": 1,
+      "sclk_pin": "PA5",
+      "miso_pin": "PA6",
+      "mosi_pin": "PA7"
+    },
+    {
+      "index": 2,
+      "sclk_pin": "PB13",
+      "miso_pin": "PB14",
+      "mosi_pin": "PB15"
+    },
+    {
+      "index": 3,
+      "sclk_pin": "PB3",
+      "miso_pin": "PB4",
+      "mosi_pin": "PB5"
+    }
+  ],
+  "beeper_pins": [
+    {
+      "index": 1,
+      "pin": "PA15"
+    }
+  ],
+  "motor_pins": [
+    {
+      "index": 1,
+      "pin": "PA0"
+    },
+    {
+      "index": 2,
+      "pin": "PA1"
+    },
+    {
+      "index": 3,
+      "pin": "PA2"
+    },
+    {
+      "index": 4,
+      "pin": "PA3"
+    }
+  ],
+  "led_pins": [
+    {
+      "index": 1,
+      "pin": "PB7"
+    }
+  ],
+  "inverter_pins": [],
+  "battery_pin": {
+    "pin": "PB2",
+    "scale": 0
+  },
+  "current_pin": {
+    "pin": "PB1",
+    "scale": 120
+  },
+  "gyros": [
+    {
+      "index": 1,
+      "exti_pin": "PA4",
+      "port": 1,
+      "cs_pin": "PB0"
+    }
+  ],
+  "osd": {
+    "port": 2,
+    "cs_pin": "PA8"
+  },
+  "data_flash": {
+    "port": 2,
+    "cs_pin": "PC6"
+  }
+}
